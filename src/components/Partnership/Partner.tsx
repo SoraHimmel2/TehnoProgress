@@ -12,8 +12,8 @@ const Partner: React.FunctionComponent<PartnerProps> = ({
   tagArray,
 }) => {
   return (
-    <div className='p-10'>
-      <div className=' overflow-hidden rounded shadow-lg'>
+    <div className='p-10 '>
+      <div className=' overflow-hidden rounded shadow-lg '>
         <img className='w-full' src={imageSrc} alt='Mountain' />
         <div className='px-6 py-4'>
           <div className='mb-2 text-xl font-bold'>{title}</div>
