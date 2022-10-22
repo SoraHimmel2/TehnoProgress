@@ -3,6 +3,8 @@ import * as React from 'react';
 import Layout from '@/components/layout/Layout';
 import ImageWithText from '@/components/MainPage/ImageWithText';
 import Navbar from '@/components/Navbar/Navbar';
+import { PartnerProps } from '@/components/Partnership/Partner';
+import PartnerList from '@/components/Partnership/PartnerList';
 import Seo from '@/components/Seo';
 
 /**
@@ -18,26 +20,72 @@ import Seo from '@/components/Seo';
 // to customize the default configuration.
 
 export default function HomePage() {
+  const partnerList: PartnerProps[] = [
+    {
+      imageSrc:
+        'https://thumbs.dreamstime.com/z/metal-gears-close-up-various-spare-parts-disassembled-engine-37748284.jpg',
+      title: 'Название компании',
+      description:
+        'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
+      tagArray: ['тег1', 'тег2', 'тег3'],
+    },
+    {
+      imageSrc:
+        'https://thumbs.dreamstime.com/z/internal-device-multi-section-water-pump-many-turbine-wheels-located-same-axis-internal-device-multi-section-146885917.jpg',
+      title: 'Название компании',
+      description:
+        'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
+      tagArray: ['тег1', 'тег2', 'тег3'],
+    },
+    {
+      imageSrc:
+        'https://thumbs.dreamstime.com/z/inside-simple-water-pump-mechanical-which-required-all-motor-vehicles-engine-cooling-systems-blades-will-rotate-55031448.jpg',
+      title: 'Название компании',
+      description:
+        'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
+      tagArray: ['тег1', 'тег2', 'тег3'],
+    },
+    {
+      imageSrc:
+        'https://thumbs.dreamstime.com/z/internal-device-multi-section-water-pump-many-turbine-wheels-located-same-axis-internal-device-multi-section-146192954.jpg',
+      title: 'Название компании',
+      description:
+        'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
+      tagArray: ['тег1', 'тег2', 'тег3'],
+    },
+    {
+      imageSrc:
+        'https://thumbs.dreamstime.com/z/internal-device-multi-section-water-pump-many-turbine-wheels-located-same-axis-internal-device-multi-section-146885917.jpg',
+      title: 'Название компании',
+      description:
+        'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
+      tagArray: ['тег1', 'тег2', 'тег3'],
+    },
+    {
+      imageSrc:
+        'https://thumbs.dreamstime.com/z/internal-device-multi-section-water-pump-many-turbine-wheels-located-same-axis-internal-device-multi-section-146192954.jpg',
+      title: 'Название компании',
+      description:
+        'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
+      tagArray: ['тег1', 'тег2', 'тег3'],
+    },
+  ];
   return (
     <Layout>
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
-      <main>
+      <main className='grid-cols-1 justify-center gap-4'>
         <Navbar></Navbar>
 
         <section className=''>
           <ImageWithText></ImageWithText>
           <div className='layout flex flex-col  items-center justify-center bg-fixed text-center'></div>
         </section>
-        <section className=''>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed placeat
-          qui eaque quibusdam porro unde, fugiat obcaecati nostrum aliquid ipsum
-          voluptates sunt assumenda natus eos iure ad dolorem. Sapiente, sit.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-          aliquid molestias provident reiciendis numquam quaerat! Voluptatibus
-          magni quibusdam earum consequuntur assumenda eaque quaerat distinctio
-          minus atque quasi? Accusamus, illum? Perferendis?
-        </section>
+        <section className=''></section>
+        <div className='flex-col justify-center'>
+          <h1 className='text-center'>Наши Партнеры</h1>
+          <PartnerList partnerList={partnerList}></PartnerList>
+        </div>
       </main>
     </Layout>
   );

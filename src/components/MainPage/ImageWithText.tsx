@@ -7,7 +7,7 @@ const ImageWithText: React.FunctionComponent = () => {
     <div className=''>
       <div className=''>
         <div className=' relative  text-white    '>
-          <div className=' absolute   overflow-scroll object-cover p-6 pt-24 text-left  text-white  sm:bottom-20 lg:border-black '>
+          <div className=' absolute    object-cover p-6 pt-24 text-left  text-white  sm:bottom-20 lg:border-black '>
             <div className='bg-slate-700  p-6 md:bg-none lg:w-2/3 '>
               <h3>Название Компании</h3>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
