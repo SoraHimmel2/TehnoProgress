@@ -17,7 +17,7 @@ type Color = typeof colorList[number];
 
 export default function ComponentsPage() {
   const [mode, setMode] = React.useState<'dark' | 'light'>('light');
-  const [color, setColor] = React.useState<Color>('sky');
+  const [color, setColor] = React.useState<Color>('cyan');
   function toggleMode() {
     return mode === 'dark' ? setMode('light') : setMode('dark');
   }
@@ -42,7 +42,7 @@ export default function ComponentsPage() {
             )}
           >
             <h1>Built-in Components</h1>
-            <ArrowLink direction='left' className='mt-2' href='/'>
+            <ArrowLink direction='left' className='mt-2 bg-red-600' href='/'>
               Back to Home
             </ArrowLink>
 
