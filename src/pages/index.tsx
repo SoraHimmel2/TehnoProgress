@@ -28,7 +28,7 @@ export default function HomePage() {
         <section className=''>
           <ImageWithText></ImageWithText>
           <div className='layout flex flex-col  items-center justify-center bg-fixed text-center'>
-            <div>Hello</div>
+            <div>Название Компании</div>
           </div>
         </section>
         <section className=''>
