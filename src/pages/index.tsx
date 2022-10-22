@@ -71,7 +71,7 @@ export default function HomePage() {
     },
   ];
   return (
-    <Layout>
+    <div>
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
       <main className='grid-cols-1 justify-center gap-4'>
@@ -87,6 +87,6 @@ export default function HomePage() {
           <PartnerList partnerList={partnerList}></PartnerList>
         </div>
       </main>
-    </Layout>
+    </div>
   );
 }
