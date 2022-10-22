@@ -10,18 +10,18 @@ const ImageWithText: React.FunctionComponent = () => {
           <div className=' absolute    object-cover p-6 pt-24 text-left  text-white  sm:bottom-20 lg:border-black '>
             <div className='bg-slate-700  p-6 md:bg-none lg:w-2/3 '>
               <h3>Название Компании</h3>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Doloribus, praesentium reprehenderit perspiciatis laborum enim ea
-              blanditiis aspernatur et at, veritatis accusantium provident
-              possimus voluptatum tempora dolores beatae, magni a laboriosam!
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum,
-              nostrum cum sint atque, culpa nesciunt ut eligendi omnis odio
-              placeat excepturi, corrupti eaque dolorum? Cum aliquam doloremque
-              possimus nesciunt. Quis? Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Blanditiis iusto repudiandae quia molestiae nemo
-              cum minus accusamus omnis laudantium ea optio quidem cumque,
-              suscipit tempora eos provident error ad quos! Lorem ipsum dolor
-              sit amet consectetur adipisicing elit.
+              Далеко-далеко за словесными горами в стране, гласных и согласных
+              живут рыбные тексты. Грамматики заглавных залетают оксмокс даль?
+              Lorem все диких великий строчка города живет подпоясал страну
+              продолжил, маленькая речью коварный вопроса о. Далеко-далеко за
+              словесными горами в стране гласных и согласных живут рыбные
+              тексты. Своих рот на берегу даже, рукопись строчка то встретил,
+              страну ее свой себя она вдали переписали дорогу моей возвращайся
+              скатился повстречался! Далеко-далеко за словесными, горами в
+              стране гласных и согласных живут рыбные тексты. Сих единственное
+              семантика они! Залетают, безопасную текст прямо не продолжил
+              подзаголовок вдали ему это свою имени буквенных. Домах,
+              предупредила до!
             </div>
           </div>
           <img
