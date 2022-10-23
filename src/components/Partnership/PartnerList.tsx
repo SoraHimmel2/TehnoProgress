@@ -15,7 +15,6 @@ const PartnerList: React.FunctionComponent<PartnerListProps> = ({
             imageSrc={partner.imageSrc}
             title={partner.title}
             description={partner.description}
-            tagArray={partner.tagArray}
           ></Partner>
         );
       })}
