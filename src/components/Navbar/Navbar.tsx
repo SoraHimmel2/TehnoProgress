@@ -104,11 +104,7 @@ const Navbar = () => {
                 <AiOutlineClose />
               </div>
             </div>
-            <div className='my-4 border-b border-gray-300'>
-              <p className='w-[85%] py-4 md:w-[90%]'>
-                Let&#39;s build something legendary together
-              </p>
-            </div>
+            <div className='my-4 border-b border-gray-300'></div>
           </div>
           <div className='flex flex-col py-4'>
             <NavbarList
@@ -119,9 +115,6 @@ const Navbar = () => {
             ></NavbarList>
 
             <div className='pt-40'>
-              <p className='uppercase tracking-widest text-[#5651e5]'>
-                Let&#39;s Connect
-              </p>
               <div className='my-4 flex w-full items-center justify-between sm:w-[80%]'>
                 <a
                   href='https://www.linkedin.com/in/clint-briley-50056920a/'
