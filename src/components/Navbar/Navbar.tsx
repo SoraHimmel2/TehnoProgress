@@ -55,7 +55,7 @@ const Navbar = () => {
           : 'fixed z-[100] h-20 w-full'
       }
     >
-      <div className='flex h-full w-full items-center justify-between px-2 2xl:px-16'>
+      <div className='flex h-full w-full items-center justify-center px-2 2xl:px-16'>
         <Link href='/'>
           <a></a>
         </Link>
@@ -64,7 +64,7 @@ const Navbar = () => {
             linkColor={linkColor}
             ulClassName='hidden md:flex'
             liArray={listItemsArray}
-            liClassName='ml-10 text-sm uppercase hover:border-b'
+            liClassName='ml-16 text-sm uppercase hover:border-b'
           ></NavbarList>
           {/* Hamburger Icon */}
           <div

@@ -3,8 +3,8 @@ const Footer: React.FunctionComponent = () => {
     <footer className='bg-white text-center text-gray-600 shadow-lg lg:text-left'>
       <div className='flex items-center justify-center border-b border-gray-300 p-6 lg:justify-between'></div>
       <div className='mx-6 py-10 text-center md:text-left'>
-        <div className='grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
-          <div className=''>
+        <div className='grid-1 grid justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-2'>
+          <div className='border-2 border-black'>
             <h6
               className='
               mb-4
@@ -33,62 +33,9 @@ const Footer: React.FunctionComponent = () => {
               </svg>
               Tailwind ELEMENTS
             </h6>
-            <p>
-              Here you can use rows and columns to organize your footer content.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
           </div>
-          <div className=''>
-            <h6 className='mb-4 flex justify-center font-semibold uppercase md:justify-start'>
-              Products
-            </h6>
-            <p className='mb-4'>
-              <a href='#!' className='text-gray-600'>
-                Angular
-              </a>
-            </p>
-            <p className='mb-4'>
-              <a href='#!' className='text-gray-600'>
-                React
-              </a>
-            </p>
-            <p className='mb-4'>
-              <a href='#!' className='text-gray-600'>
-                Vue
-              </a>
-            </p>
-            <p>
-              <a href='#!' className='text-gray-600'>
-                Laravel
-              </a>
-            </p>
-          </div>
-          <div className=''>
-            <h6 className='mb-4 flex justify-center font-semibold uppercase md:justify-start'>
-              Useful links
-            </h6>
-            <p className='mb-4'>
-              <a href='#!' className='text-gray-600'>
-                Pricing
-              </a>
-            </p>
-            <p className='mb-4'>
-              <a href='#!' className='text-gray-600'>
-                Settings
-              </a>
-            </p>
-            <p className='mb-4'>
-              <a href='#!' className='text-gray-600'>
-                Orders
-              </a>
-            </p>
-            <p>
-              <a href='#!' className='text-gray-600'>
-                Help
-              </a>
-            </p>
-          </div>
-          <div className=''>
+
+          <div className='border-2 border-black'>
             <h6 className='mb-4 flex justify-center font-semibold uppercase md:justify-start'>
               Contact
             </h6>
