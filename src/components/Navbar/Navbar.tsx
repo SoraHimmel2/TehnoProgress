@@ -55,7 +55,7 @@ const Navbar = () => {
           : 'fixed z-[100] h-20 w-full'
       }
     >
-      <div className='flex h-full w-full items-center justify-center px-2 2xl:px-16'>
+      <div className='flex h-full w-full items-center justify-between px-2 md:justify-center 2xl:px-16'>
         <Link href='/'>
           <a></a>
         </Link>

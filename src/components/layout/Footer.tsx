@@ -3,8 +3,8 @@ const Footer: React.FunctionComponent = () => {
     <footer className='bg-white text-center text-gray-600 shadow-lg lg:text-left'>
       <div className='flex items-center justify-center border-b border-gray-300 p-6 lg:justify-between'></div>
       <div className='mx-6 py-10 text-center md:text-left'>
-        <div className='grid-1 grid justify-items-center gap-8 md:grid-cols-2 lg:grid-cols-2'>
-          <div className='border-2 border-black'>
+        <div className='flex justify-center gap-8'>
+          <div className='border-black'>
             <h6
               className='
               mb-4
@@ -35,7 +35,7 @@ const Footer: React.FunctionComponent = () => {
             </h6>
           </div>
 
-          <div className='border-2 border-black'>
+          <div className='border-black'>
             <h6 className='mb-4 flex justify-center font-semibold uppercase md:justify-start'>
               Contact
             </h6>
