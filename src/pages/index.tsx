@@ -62,7 +62,7 @@ export default function HomePage() {
         </section>
         <section className=''></section>
         <div className='flex-col justify-center'>
-          <h1 className='text-center'>Наши Партнеры</h1>
+          <h1 className='text-center'>Наши Товары</h1>
           <ProductList productList={partnerList}></ProductList>
         </div>
       </main>

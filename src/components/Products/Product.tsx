@@ -23,7 +23,7 @@ const Product: React.FunctionComponent<ProductProps> = ({
           <div className='mb-2 text-xl font-bold'>{title}</div>
           <p className='text-base text-gray-700'>{description}</p>
         </div>
-        <div className=''>
+        <div className='p-4'>
           <ButtonLink
             className='flex items-stretch'
             isDarkBg={false}
