@@ -17,7 +17,7 @@ type Color = typeof colorList[number];
 
 export default function ComponentsPage() {
   const [mode, setMode] = React.useState<'dark' | 'light'>('light');
-  const [color, setColor] = React.useState<Color>('cyan');
+  const [color, setColor] = React.useState<Color>('red');
   function toggleMode() {
     return mode === 'dark' ? setMode('light') : setMode('dark');
   }

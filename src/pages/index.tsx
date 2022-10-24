@@ -5,7 +5,6 @@ import Navbar from '@/components/Navbar/Navbar';
 import { ProductProps } from '@/components/Products/Product';
 import ProductList from '@/components/Products/ProductList';
 import Seo from '@/components/Seo';
-import TestPdf from '@/components/Pdf/TestPdf';
 
 /**
  * SVGR Support
