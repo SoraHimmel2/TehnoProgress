@@ -2,9 +2,10 @@ import * as React from 'react';
 
 import ImageWithText from '@/components/MainPage/ImageWithText';
 import Navbar from '@/components/Navbar/Navbar';
-import { PartnerProps } from '@/components/Partnership/Partner';
-import PartnerList from '@/components/Partnership/PartnerList';
+import { ProductProps } from '@/components/Products/Product';
+import ProductList from '@/components/Products/ProductList';
 import Seo from '@/components/Seo';
+import TestPdf from '@/components/Pdf/TestPdf';
 
 /**
  * SVGR Support
@@ -19,48 +20,33 @@ import Seo from '@/components/Seo';
 // to customize the default configuration.
 
 export default function HomePage() {
-  const partnerList: PartnerProps[] = [
+  const partnerList: ProductProps[] = [
     {
-      imageSrc:
-        'https://thumbs.dreamstime.com/z/metal-gears-close-up-various-spare-parts-disassembled-engine-37748284.jpg',
+      imageSrc: 'images/1.png',
       title: 'Название компании',
       description:
         'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
+      pdfLink:
+        'https://drive.google.com/file/d/13C0MmDj_qg_w5nqWZnQPI1NWm6nBOHXt/view',
+      buttonText: 'Перейти в каталог',
     },
     {
-      imageSrc:
-        'https://thumbs.dreamstime.com/z/internal-device-multi-section-water-pump-many-turbine-wheels-located-same-axis-internal-device-multi-section-146885917.jpg',
+      imageSrc: 'images/2.png',
       title: 'Название компании',
       description:
         'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
+      pdfLink:
+        'https://drive.google.com/file/d/1Yg4yAEh3lSD7vnueGNHWIIn9Quy_Ubqu/view',
+      buttonText: 'Перейти в каталог',
     },
     {
-      imageSrc:
-        'https://thumbs.dreamstime.com/z/inside-simple-water-pump-mechanical-which-required-all-motor-vehicles-engine-cooling-systems-blades-will-rotate-55031448.jpg',
+      imageSrc: 'images/3.png',
       title: 'Название компании',
       description:
         'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
-    },
-    {
-      imageSrc:
-        'https://thumbs.dreamstime.com/z/internal-device-multi-section-water-pump-many-turbine-wheels-located-same-axis-internal-device-multi-section-146192954.jpg',
-      title: 'Название компании',
-      description:
-        'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
-    },
-    {
-      imageSrc:
-        'https://thumbs.dreamstime.com/z/internal-device-multi-section-water-pump-many-turbine-wheels-located-same-axis-internal-device-multi-section-146885917.jpg',
-      title: 'Название компании',
-      description:
-        'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
-    },
-    {
-      imageSrc:
-        'https://thumbs.dreamstime.com/z/internal-device-multi-section-water-pump-many-turbine-wheels-located-same-axis-internal-device-multi-section-146192954.jpg',
-      title: 'Название компании',
-      description:
-        'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
+      pdfLink:
+        'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
+      buttonText: 'Перейти в каталог',
     },
   ];
   return (
@@ -77,7 +63,7 @@ export default function HomePage() {
         <section className=''></section>
         <div className='flex-col justify-center'>
           <h1 className='text-center'>Наши Партнеры</h1>
-          <PartnerList partnerList={partnerList}></PartnerList>
+          <ProductList productList={partnerList}></ProductList>
         </div>
       </main>
     </div>
