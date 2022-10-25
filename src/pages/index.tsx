@@ -8,6 +8,8 @@ import Seo from '@/components/Seo';
 import Partner from '@/components/Partnership/Partner';
 import Link from 'next/link';
 import ArrowLink from '@/components/links/ArrowLink';
+import SubmitForm from '@/components/Forms/SubmitForm';
+import TestForm from '@/components/Forms/TestForm';
 
 /**
  * SVGR Support
@@ -143,6 +145,9 @@ export default function HomePage() {
         <div className='flex-col justify-center'>
           <h1 className='text-center'>Наши Товары</h1>
           <ProductList productList={partnerList}></ProductList>
+        </div>
+        <div className='flex justify-center'>
+          <TestForm></TestForm>
         </div>
       </main>
     </div>
