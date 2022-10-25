@@ -5,6 +5,9 @@ import Navbar from '@/components/Navbar/Navbar';
 import { ProductProps } from '@/components/Products/Product';
 import ProductList from '@/components/Products/ProductList';
 import Seo from '@/components/Seo';
+import Partner from '@/components/Partnership/Partner';
+import Link from 'next/link';
+import ArrowLink from '@/components/links/ArrowLink';
 
 /**
  * SVGR Support
@@ -53,11 +56,88 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
       <main className='grid-cols-1 justify-center gap-4'>
-        <Navbar></Navbar>
-
         <section className=''>
           <ImageWithText></ImageWithText>
-          <div className='layout flex flex-col  items-center justify-center bg-fixed text-center'></div>
+        </section>
+        <section>
+          <h1 className='text-center'>Партнеры</h1>
+          <div className='grid grid-cols-1 items-center gap-8  md:grid-cols-2 '>
+            <div className='mx-10 my-8 overflow-hidden rounded border-primary-900  shadow-xl  xl:mx-36'>
+              <img
+                className='h-40 w-full p-7'
+                src='https://www.festo.com/media/fox/frontend/img/svg/logo_blue.svg'
+                alt='Festo'
+              />
+              <div className='px-6 py-4'>
+                <div className='text-base text-gray-700'>
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут, рыбные тексты. Силуэт текст вопроса точках
+                  пунктуация переулка, речью маленький послушавшись свою
+                  правилами которое переписывается решила коварный имени
+                  текстами знаках, бросил живет?
+                </div>
+                <div className='flex-col'>
+                  <div>
+                    <ArrowLink
+                      direction='right'
+                      className='mt-2 '
+                      href='/certificates/sertificate1.png'
+                    >
+                      Сертификат Festo
+                    </ArrowLink>
+                  </div>
+                  <div>
+                    <ArrowLink
+                      direction='right'
+                      className='mt-2 '
+                      href='https://www.festo.com/us/en/#top'
+                    >
+                      Сайт Festo
+                    </ArrowLink>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className='mx-10 my-8 overflow-hidden rounded border-primary-900  shadow-xl  xl:mx-36'>
+              <img
+                className='h-40 w-full p-2'
+                src='/images/aignep.png'
+                alt='Festo'
+              />
+              <div className='px-6 py-4'>
+                <div className='text-base text-gray-700'>
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут, рыбные тексты. Силуэт текст вопроса точках
+                  пунктуация переулка, речью маленький послушавшись свою
+                  правилами которое переписывается решила коварный имени
+                  текстами знаках, бросил живет?
+                </div>
+                <div className='flex-col'>
+                  <div>
+                    <ArrowLink
+                      direction='right'
+                      className='mt-2 '
+                      href='/certificates/sertificate2.png'
+                    >
+                      Сертификат Aignep
+                    </ArrowLink>
+                  </div>
+                  <div>
+                    <ArrowLink
+                      direction='right'
+                      className='mt-2 '
+                      href='https://www.aignepusa.com/'
+                    >
+                      Сайт Aignep
+                    </ArrowLink>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='flex'></div>
         </section>
         <section className=''></section>
         <div className='flex-col justify-center'>

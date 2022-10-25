@@ -1,9 +1,10 @@
+import Link from 'next/link';
 const Footer: React.FunctionComponent = () => {
   return (
     <footer className='bg-white text-center text-gray-600 shadow-lg lg:text-left'>
       <div className='flex items-center justify-center border-b border-gray-300 p-6 lg:justify-between'></div>
       <div className='mx-6 py-10 text-center md:text-left'>
-        <div className='flex justify-center gap-8'>
+        <div className='flex-col justify-center gap-10 md:flex md:flex-row'>
           <div className='border-black'>
             <h6
               className='
@@ -34,7 +35,21 @@ const Footer: React.FunctionComponent = () => {
               Tailwind ELEMENTS
             </h6>
           </div>
-
+          <div className='flex-col '>
+            <h6 className='font-semibold uppercase'>Сертификаты</h6>
+            <div className='p-4'>
+              <div className='mb-2'>
+                <Link href={`/certificates/sertificate1.png`}>
+                  <a>Festo</a>
+                </Link>
+              </div>
+              <div className='mb-2'>
+                <Link href={`/certificates/sertificate2.png`}>
+                  <a>Aignep</a>
+                </Link>
+              </div>
+            </div>
+          </div>
           <div className='border-black'>
             <h6 className='mb-4 flex justify-center font-semibold uppercase md:justify-start'>
               Contact

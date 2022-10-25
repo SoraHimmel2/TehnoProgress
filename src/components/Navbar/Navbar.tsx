@@ -70,7 +70,7 @@ const Navbar = () => {
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
-            className='md:hidden'
+            className='px-4 md:hidden'
           >
             <AiOutlineMenu size={25} />
           </div>
@@ -99,7 +99,7 @@ const Navbar = () => {
               </Link>
               <div
                 onClick={handleNav}
-                className='cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400'
+                className=' cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400'
               >
                 <AiOutlineClose />
               </div>
