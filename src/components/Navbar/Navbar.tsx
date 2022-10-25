@@ -57,7 +57,12 @@ const Navbar = () => {
     >
       <div className='flex h-full w-full items-center justify-between px-2 md:justify-center 2xl:px-16'>
         <Link href='/'>
-          <a></a>
+          <a>
+            <img
+              src='/images/logo-v1.png'
+              className='absolute top-3 left-0 h-14'
+            ></img>
+          </a>
         </Link>
         <div>
           <NavbarList
