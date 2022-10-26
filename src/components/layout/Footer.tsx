@@ -10,11 +10,8 @@ const Footer: React.FunctionComponent = () => {
               className='
               mb-4
               flex
-              items-center
-              justify-center
-              font-semibold
-              uppercase
-              md:justify-start
+              flex-col 
+              items-start
             '
             >
               {/* <svg
@@ -35,42 +32,41 @@ const Footer: React.FunctionComponent = () => {
               <img src='/images/logo-vq.png' className='w-96'></img>
             </h6>
           </div>
-          <div className='flex-col '>
-            <h6 className='font-semibold uppercase'>Сертификаты</h6>
-            <div className='py-4'>
-              <div className='mb-2'>
-                <Link href={`/certificates/sertificate1.png`}>
-                  <a className='font-mono'>Festo</a>
-                </Link>
-              </div>
-              <div className='mb-2'>
-                <Link href={`/certificates/sertificate2.png`}>
-                  <a className='font-mono'>Aignep</a>
-                </Link>
-              </div>
+          <div className='flex flex-col items-start'>
+            <h6 className='mb-4 font-semibold uppercase'>Сертификаты</h6>
+
+            <div className='mb-2'>
+              <Link href={`/certificates/sertificate1.png`}>
+                <a className='font-mono'>Festo</a>
+              </Link>
+            </div>
+            <div className='mb-2 '>
+              <Link href={`/certificates/sertificate2.png`}>
+                <a className='font-mono'>Aignep</a>
+              </Link>
             </div>
           </div>
-          <div className='flex flex-col items-center justify-center    '>
-            <div className='flex flex-col items-start'>
-              <h6 className=' mb-4 font-semibold uppercase'>Контакты</h6>
 
+          <div className='flex flex-col items-start'>
+            <h6 className=' mb-4 font-semibold uppercase'>Контакты</h6>
+            <div className='flex w-60 flex-wrap'>
               <div className='font-mono'>Адрес :&nbsp;</div>
-              <div className='font-mono'>
-                г. Санкт-Петербург, ул. 6-я Красноармейская,
-              </div>
+              <div className='font-mono'>г. Санкт-Петербург,</div>
+              <div>ул. 6-я Красноармейская,</div>
               <div className='mb-2 font-mono'>д. 10, лит. А, ПОМЕЩ. 24</div>
-              <div className='mb-2 flex flex-wrap'>
-                <div className='font-mono'>Почта : &nbsp;</div>
-                <div className='font-mono'>sales@tehnoprogress78.ru</div>
-              </div>
-              <div className='flex flex-wrap justify-between '>
-                <div className='font-mono'>Отдел продаж : </div>
-                <div className='font-mono'>8-921-956-09-42</div>
-              </div>
-              <div className=' flex flex-wrap justify-between '>
-                <div className='font-mono'>Директор &nbsp; &nbsp; :</div>
-                <div className=' font-mono'>8-921-211-09-40</div>
-              </div>
+            </div>
+
+            <div className='mb-2 flex flex-wrap'>
+              <div className='font-mono'>Почта : &nbsp;</div>
+              <div className='font-mono'>sales@tehnoprogress78.ru</div>
+            </div>
+            <div className='mb-2 flex flex-wrap justify-between '>
+              <div className='font-mono'>Отдел продаж : </div>
+              <div className='font-mono'>8-921-956-09-42</div>
+            </div>
+            <div className=' flex flex-wrap justify-between '>
+              <div className='font-mono'>Директор &nbsp; &nbsp; :</div>
+              <div className=' font-mono'>8-921-211-09-40</div>
             </div>
           </div>
         </div>
