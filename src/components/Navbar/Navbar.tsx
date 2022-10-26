@@ -168,21 +168,23 @@ const Navbar = () => {
               </h6>
               <p className='mb-2 flex items-center justify-center md:justify-start'>
                 <div className='flex-col'>
-                  <div>Адрес :</div>
+                  <div>Адрес :&nbsp;</div>
                   <div className='pl-2'>
                     г. Санкт-Петербург, ул. 6-я Красноармейская,
                   </div>
                   <div className='pl-2'>д. 10, лит. А, ПОМЕЩ. 24</div>
-                  <div className=''>
-                    <div>Почта: sales@tehnoprogress78.ru </div>
-                    <div></div>
+                  <div className='flex flex-wrap'>
+                    <div>Почта : &nbsp;</div>
+                    <div className=''>sales@tehnoprogress78.ru</div>
                   </div>
-
-                  <div>
-                    Отдел продаж :{' '}
-                    <span className='inline'>8-921-956-09-42</span>
+                  <div className='flex flex-wrap'>
+                    <div className=''>Отдел продаж : &nbsp;</div>
+                    <div className=''>8-921-956-09-42</div>
                   </div>
-                  <div className='break-words'>Директор : 8-921-211-09-40</div>
+                  <div className='flex flex-wrap'>
+                    <div className='break-words'>Директор : &nbsp;</div>
+                    <div>8-921-211-09-40</div>
+                  </div>
                 </div>
               </p>
             </div>
