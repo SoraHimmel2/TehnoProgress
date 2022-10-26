@@ -177,7 +177,7 @@ const Navbar = () => {
                     <div className='font-mono'>Почта : &nbsp;</div>
                     <div className='font-mono'>sales@tehnoprogress78.ru</div>
                   </div>
-                  <div className='w-36 border-black sm:w-44'>
+                  <div className='w-36 border-black '>
                     <div className='flex flex-row flex-wrap justify-between '>
                       <div className=' font-mono'>Отдел продаж : &nbsp;</div>
                       <div className=' font-mono'>8-921-956-09-42</div>
