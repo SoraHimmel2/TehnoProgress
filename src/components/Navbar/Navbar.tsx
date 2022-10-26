@@ -87,7 +87,7 @@ const Navbar = () => {
         onClick={handleNav}
         className={
           nav
-            ? 'absolute bottom-10 right-4 z-[60] flex h-14 w-14 cursor-pointer items-center  justify-center rounded-full bg-white p-3 shadow-lg shadow-gray-400 md:hidden'
+            ? 'absolute top-10 right-6 z-[60] flex h-14 w-14 cursor-pointer items-center  justify-center rounded-full bg-white p-3 shadow-lg shadow-gray-400 md:hidden'
             : 'hidden'
         }
       >
