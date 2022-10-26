@@ -56,7 +56,7 @@ const Navbar = () => {
       }
     >
       <div className='flex h-full w-full items-center justify-between px-2 md:justify-center 2xl:px-16'>
-        <div className='invisible lg:visible'>
+        <div className='visible md:invisible lg:visible'>
           <Link href='/'>
             <a>
               <img
@@ -87,6 +87,10 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {/* Overlay */}
+      {/* <div
+        onClick={handleNav}
+        className='absolute top-20 right-4 z-[80] h-20 w-20 cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 md:hidden'
+      ></div> */}
       <div
         className={
           nav ? 'fixed left-0 top-0 h-screen w-full bg-black/70 md:hidden' : ''
@@ -123,7 +127,7 @@ const Navbar = () => {
               liClassName='py-4 text-sm'
             ></NavbarList>
 
-            <div className='pt-40'>
+            {/* <div className='pt-40'>
               <div className='my-4 flex w-full items-center justify-between sm:w-[80%]'>
                 <a
                   href='https://www.linkedin.com/in/clint-briley-50056920a/'
@@ -160,7 +164,7 @@ const Navbar = () => {
                   </div>
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
