@@ -52,17 +52,6 @@ const Navbar = () => {
       }
     >
       <div className='flex h-full w-full items-center justify-between px-2 md:justify-center 2xl:px-16'>
-        <div className='visible md:invisible lg:visible'>
-          <Link href='/'>
-            <a>
-              <img
-                src='/images/logo-vq.png'
-                className='absolute top-3 left-6 h-14'
-              ></img>
-            </a>
-          </Link>
-        </div>
-
         <div>
           <NavbarList
             linkColor={linkColor}
@@ -79,6 +68,13 @@ const Navbar = () => {
             <AiOutlineMenu size={25} />
           </div>
         </div>
+        <div className='visible md:invisible lg:visible'>
+          <Link href='/'>
+            <a>
+              <img src='/images/logo-vq.png' className=' mr-5 h-14'></img>
+            </a>
+          </Link>
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -87,11 +83,15 @@ const Navbar = () => {
         onClick={handleNav}
         className={
           nav
-            ? 'absolute top-10 right-6 z-[60] flex h-14 w-14 cursor-pointer items-center  justify-center rounded-full bg-white p-3 shadow-lg shadow-gray-400 md:hidden'
+            ? 'absolute top-10 right-6 z-[60] flex h-14 w-14 cursor-pointer items-center  justify-center  border-none bg-none p-3  md:hidden'
             : 'hidden'
         }
       >
-        <AiOutlineClose className='h-12 w-12' />
+        <AiOutlineClose
+          color='white'
+          enableBackground={1}
+          className='h-12 w-12 '
+        />
       </div>
       <div
         onClick={handleNav}
@@ -110,7 +110,7 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between'>
               <div>
-                <img src='/images/logo-vq.png' className=' h-14'></img>
+                <img src='/images/logo-vq.png' className=' h-14 '></img>
               </div>
             </div>
             <div className='my-4 border-b border-gray-300'></div>
@@ -167,24 +167,37 @@ const Navbar = () => {
                 Контакты
               </h6>
               <p className='mb-2 flex items-center justify-center md:justify-start'>
-                <div className='flex-col'>
-                  <div>Адрес :&nbsp;</div>
-                  <div className='pl-2'>
+                <div className='flex-col '>
+                  <div className='font-mono'>Адрес :&nbsp;</div>
+                  <div className='font-mono'>
                     г. Санкт-Петербург, ул. 6-я Красноармейская,
                   </div>
-                  <div className='pl-2'>д. 10, лит. А, ПОМЕЩ. 24</div>
-                  <div className='flex flex-wrap'>
-                    <div>Почта : &nbsp;</div>
-                    <div className=''>sales@tehnoprogress78.ru</div>
+                  <div className='mb-2 font-mono'>д. 10, лит. А, ПОМЕЩ. 24</div>
+                  <div className='mb-2 flex flex-wrap'>
+                    <div className='font-mono'>Почта : &nbsp;</div>
+                    <div className='font-mono'>sales@tehnoprogress78.ru</div>
                   </div>
-                  <div className='flex flex-wrap'>
-                    <div className=''>Отдел продаж : &nbsp;</div>
-                    <div className=''>8-921-956-09-42</div>
+                  <div className='w-46 border-black sm:w-44'>
+                    <div className='flex flex-row flex-wrap justify-between '>
+                      <div className=' font-mono'>Отдел продаж : &nbsp;</div>
+                      <div className=' font-mono'>8-921-956-09-42</div>
+                    </div>
+                    <div className='flex flex-row flex-wrap justify-between align-text-bottom'>
+                      <div className='w-36  font-mono'>Директор : &nbsp;</div>
+                      <div className='  font-mono'>8-921-211-09-40</div>
+                    </div>
                   </div>
-                  <div className='flex flex-wrap'>
-                    <div className='break-words'>Директор : &nbsp;</div>
-                    <div>8-921-211-09-40</div>
-                  </div>
+
+                  {/* <div className='flex flex-col justify-center'>
+                    <div className='w-70 flex flex-row border-2 border-black'>
+                      <div className=''>Отдел продаж : &nbsp;</div>
+                      <div className=''>8-921-956-09-42</div>
+                    </div>
+                    <div className='w-28 justify-center border-2 border-black'>
+                      <div className=''>Директор : &nbsp;</div>
+                      <div className=''>8-921-211-09-40</div>
+                    </div>
+                  </div> */}
                 </div>
               </p>
             </div>
