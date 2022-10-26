@@ -1,4 +1,51 @@
+import { useFormik } from 'formik';
+import { useState } from 'react';
+import * as yup from 'yup';
+import InputMask from 'react-input-mask';
+
 const TestForm: React.FunctionComponent = () => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const formik = useFormik({
+    initialValues: {
+      email: '',
+      name: '',
+      company: '',
+      phone: '',
+    },
+    onSubmit: () => {
+      setSubmitted(true);
+    },
+    validationSchema: yup.object({
+      name: yup
+        .string()
+        .min(2, 'Имя должно быть больше 2х символов!')
+        .max(50, 'Имя не должно превышать длину в 50 символов!')
+        .required('Поле обязательно к заполнению'),
+      email: yup
+        .string()
+        .email('Email введен не корректно')
+        .required('Email обязателен к заполению'),
+      company: yup
+        .string()
+        .min(2, 'Название компании/должности должно быть больше 2х символов!')
+        .max(
+          50,
+          'Название компании/должности не должно превышать длину в 50 символов!'
+        )
+        .required('Поле обязательно к заполнению'),
+      phone: yup
+        .string()
+        .test(
+          'phone-len',
+          'Номер телефона должен содержать не меньше 6 символов!',
+          (val = '') => {
+            return val.replace(/-|\(|\)|_|\+|\s/g, '').length > 6;
+          }
+        ),
+    }),
+  });
+
   return (
     <div>
       <div className='w-full max-w-xs'>
@@ -7,12 +54,20 @@ const TestForm: React.FunctionComponent = () => {
             <label className='mb-2 block text-sm font-bold text-gray-700'>
               Номер телефона
             </label>
-            <input
+
+            <InputMask
               className='focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
-              id='username'
+              mask='+9 (999) 999-99-99'
               type='text'
-              placeholder=''
-            />
+              id='phone'
+              name='phone'
+              value={formik.values.phone}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+            ></InputMask>
+            {formik.errors.phone && formik.touched.phone ? (
+              <div className='text-red-600'>{formik.errors.phone}</div>
+            ) : null}
           </div>
           <div className='mb-6'>
             <label className='mb-2 block text-sm font-bold text-gray-700'>
@@ -21,9 +76,17 @@ const TestForm: React.FunctionComponent = () => {
             <input
               className='focus:shadow-outline mb-3 w-full appearance-none rounded  py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
               id='password'
-              type='password'
+              type='text'
+              name='name'
               placeholder=''
+              value={formik.values.name}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
             />
+
+            {formik.errors.name && formik.touched.name ? (
+              <div className='text-red-600'>{formik.errors.name}</div>
+            ) : null}
             <p className='text-xs italic text-red-500'></p>
           </div>
 
@@ -33,10 +96,16 @@ const TestForm: React.FunctionComponent = () => {
             </label>
             <input
               className='focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
-              id='username'
-              type='text'
               placeholder=''
+              type='email'
+              name='email'
+              value={formik.values.email}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
             />
+            {formik.errors.email && formik.touched.email ? (
+              <div className='text-red-600'>{formik.errors.email}</div>
+            ) : null}
           </div>
 
           <div className='mb-4'>
@@ -44,11 +113,16 @@ const TestForm: React.FunctionComponent = () => {
               Компания(должность)
             </label>
             <input
-              className='focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
-              id='username'
+              className='focus:shadow-outline mb-3 w-full appearance-none rounded  py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
               type='text'
-              placeholder=''
+              name='company'
+              value={formik.values.company}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
             />
+            {formik.errors.company && formik.touched.company ? (
+              <div className='text-red-600'>{formik.errors.company}</div>
+            ) : null}
           </div>
 
           <div className='mb-4'>
@@ -59,6 +133,7 @@ const TestForm: React.FunctionComponent = () => {
               className='focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
               id='username'
               placeholder=''
+              name='message'
             />
           </div>
 
