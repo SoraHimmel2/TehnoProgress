@@ -9,7 +9,7 @@ import Partner from '@/components/Partnership/Partner';
 import Link from 'next/link';
 import ArrowLink from '@/components/links/ArrowLink';
 
-import SubmitForm from '@/components/Forms/TestForm';
+import SubmitForm from '@/components/Forms/SubmitForm';
 
 /**
  * SVGR Support
@@ -66,7 +66,7 @@ export default function HomePage() {
                     <ArrowLink
                       direction='right'
                       className='mt-2 '
-                      href='/certificates/sertificate1.png'
+                      href='/certificates/Festo.jpg'
                     >
                       Сертификат Festo
                     </ArrowLink>
