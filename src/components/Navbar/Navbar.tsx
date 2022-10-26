@@ -18,12 +18,7 @@ const Navbar = () => {
 
     {
       href: '/products',
-      text: 'Список продукции',
-    },
-
-    {
-      href: '/#partnership',
-      text: 'Партнеры',
+      text: 'Продукция',
     },
   ];
 
@@ -71,7 +66,7 @@ const Navbar = () => {
         <div className='visible  lg:visible'>
           <Link href='/'>
             <a>
-              <img src='/images/logo-vq.png' className='  h-14 px-5'></img>
+              <img src='/images/logo-vq.png' className='  h-14 px-16'></img>
             </a>
           </Link>
         </div>
@@ -186,17 +181,6 @@ const Navbar = () => {
                       <div className='font-mono'>8-921-211-09-40</div>
                     </div>
                   </div>
-
-                  {/* <div className='flex flex-col justify-center'>
-                    <div className='w-70 flex flex-row border-2 border-black'>
-                      <div className=''>Отдел продаж : &nbsp;</div>
-                      <div className=''>8-921-956-09-42</div>
-                    </div>
-                    <div className='w-28 justify-center border-2 border-black'>
-                      <div className=''>Директор : &nbsp;</div>
-                      <div className=''>8-921-211-09-40</div>
-                    </div>
-                  </div> */}
                 </div>
               </p>
             </div>
