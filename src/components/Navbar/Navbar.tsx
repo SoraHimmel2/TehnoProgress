@@ -161,6 +161,31 @@ const Navbar = () => {
                 </Link>
               </div>
             </div> */}
+            <div>
+              {' '}
+              <h6 className='mb-4 flex justify-start font-semibold uppercase md:justify-start'>
+                Контакты
+              </h6>
+              <p className='mb-2 flex items-center justify-center md:justify-start'>
+                <div className='flex-col'>
+                  <div>Адрес :</div>
+                  <div className='pl-2'>
+                    г. Санкт-Петербург, ул. 6-я Красноармейская,
+                  </div>
+                  <div className='pl-2'>д. 10, лит. А, ПОМЕЩ. 24</div>
+                  <div className=''>
+                    <div>Почта: sales@tehnoprogress78.ru </div>
+                    <div></div>
+                  </div>
+
+                  <div>
+                    Отдел продаж :{' '}
+                    <span className='inline'>8-921-956-09-42</span>
+                  </div>
+                  <div className='break-words'>Директор : 8-921-211-09-40</div>
+                </div>
+              </p>
+            </div>
           </div>
         </div>
       </div>
