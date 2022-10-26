@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 import NavbarList, { liProps } from '@/components/Navbar/NavbarList';
 
@@ -17,16 +15,14 @@ const Navbar = () => {
       href: '/',
       text: 'Главная',
     },
+
     {
-      href: '/about',
+      href: '/products',
       text: 'Список продукции',
     },
+
     {
-      href: '/skills',
-      text: 'Контакты',
-    },
-    {
-      href: '/skills',
+      href: '/#partnership',
       text: 'Партнеры',
     },
   ];

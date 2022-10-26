@@ -3,7 +3,7 @@ import { useState } from 'react';
 import * as yup from 'yup';
 import InputMask from 'react-input-mask';
 
-const TestForm: React.FunctionComponent = () => {
+const SubmitForm: React.FunctionComponent = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const formik = useFormik({
@@ -151,4 +151,4 @@ const TestForm: React.FunctionComponent = () => {
   );
 };
 
-export default TestForm;
+export default SubmitForm;
