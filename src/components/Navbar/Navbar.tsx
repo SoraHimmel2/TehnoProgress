@@ -57,7 +57,7 @@ const Navbar = () => {
             <a>
               <img
                 src='/images/logo-vq.png'
-                className='absolute top-3 left-2 h-14'
+                className='absolute top-3 left-6 h-14'
               ></img>
             </a>
           </Link>
