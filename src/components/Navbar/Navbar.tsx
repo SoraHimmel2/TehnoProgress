@@ -51,7 +51,7 @@ const Navbar = () => {
           : 'fixed top-0 z-[100] h-20 w-full'
       }
     >
-      <div className='flex h-full w-full items-center justify-between px-2 md:justify-center 2xl:px-16'>
+      <div className='flex h-full w-full items-center justify-between px-2 md:flex-row-reverse  2xl:px-16'>
         <div>
           <NavbarList
             linkColor={linkColor}
@@ -68,10 +68,10 @@ const Navbar = () => {
             <AiOutlineMenu size={25} />
           </div>
         </div>
-        <div className='visible md:invisible lg:visible'>
+        <div className='visible  lg:visible'>
           <Link href='/'>
             <a>
-              <img src='/images/logo-vq.png' className=' mr-5 h-14'></img>
+              <img src='/images/logo-vq.png' className='  h-14 px-5'></img>
             </a>
           </Link>
         </div>
