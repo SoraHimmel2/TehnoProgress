@@ -104,7 +104,7 @@ const Navbar = () => {
           className={
             nav
               ? ' fixed left-0 top-0 h-screen w-[75%] bg-[#ecf0f3] p-10 duration-500 ease-in sm:w-[60%] md:w-[45%]'
-              : 'fixed left-[-100%] top-0 p-10 duration-500 ease-in'
+              : 'invisible fixed left-[-100%] top-0 p-10 duration-500 ease-in'
           }
         >
           <div>
@@ -162,7 +162,6 @@ const Navbar = () => {
               </div>
             </div> */}
             <div className='mt-16'>
-              {' '}
               <h6 className='mb-4 flex justify-start font-semibold uppercase md:justify-start'>
                 Контакты
               </h6>
@@ -179,12 +178,12 @@ const Navbar = () => {
                   </div>
                   <div className='w-36 border-black '>
                     <div className='flex flex-row flex-wrap justify-between '>
-                      <div className=' font-mono'>Отдел продаж : &nbsp;</div>
-                      <div className=' font-mono'>8-921-956-09-42</div>
+                      <div className='font-mono'>Отдел продаж : &nbsp;</div>
+                      <div className='font-mono'>8-921-956-09-42</div>
                     </div>
                     <div className='flex flex-row flex-wrap justify-between align-text-bottom'>
                       <div className='w-36  font-mono'>Директор : &nbsp;</div>
-                      <div className='  font-mono'>8-921-211-09-40</div>
+                      <div className='font-mono'>8-921-211-09-40</div>
                     </div>
                   </div>
 
