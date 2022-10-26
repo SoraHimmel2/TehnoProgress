@@ -83,11 +83,18 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {/* Overlay */}
-      {/* <div
-        onClick={handleNav}
-        className='absolute top-20 right-4 z-[80] h-20 w-20 cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 md:hidden'
-      ></div> */}
       <div
+        onClick={handleNav}
+        className={
+          nav
+            ? 'absolute bottom-10 right-4 z-[60] flex h-14 w-14 cursor-pointer items-center  justify-center rounded-full bg-white p-3 shadow-lg shadow-gray-400 md:hidden'
+            : 'hidden'
+        }
+      >
+        <AiOutlineClose className='h-12 w-12' />
+      </div>
+      <div
+        onClick={handleNav}
         className={
           nav ? 'fixed left-0 top-0 h-screen w-full bg-black/70 md:hidden' : ''
         }
@@ -104,13 +111,6 @@ const Navbar = () => {
             <div className='flex w-full items-center justify-between'>
               <div>
                 <img src='/images/logo-vq.png' className=' h-14'></img>
-              </div>
-
-              <div
-                onClick={handleNav}
-                className=' cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400'
-              >
-                <AiOutlineClose />
               </div>
             </div>
             <div className='my-4 border-b border-gray-300'></div>
