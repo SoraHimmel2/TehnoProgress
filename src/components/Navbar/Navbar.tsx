@@ -57,7 +57,7 @@ const Navbar = () => {
             linkColor={linkColor}
             ulClassName='hidden md:flex'
             liArray={listItemsArray}
-            liClassName='ml-16 text-sm uppercase hover:border-b'
+            liClassName='mx-8 text-sm uppercase hover:border-b'
           ></NavbarList>
           {/* Hamburger Icon */}
           <div
