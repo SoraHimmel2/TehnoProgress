@@ -24,7 +24,7 @@ const ImageWithText: React.FunctionComponent = () => {
         </div>
         <img
           src='https://thumbs.dreamstime.com/z/gas-turbine-engine-feed-gas-compressor-located-inside-pressurized-enclosure-gas-turbine-engine-used-offshore-gas-turbine-117572042.jpg'
-          className=' min-h-[750px] w-full object-none mix-blend-overlay blur-sm lg:max-h-[800px] xl:object-cover '
+          className='min-h-[750px] w-full object-none mix-blend-overlay blur-sm brightness-125 lg:max-h-[800px] xl:object-cover '
         />
       </div>
     </div>
