@@ -161,7 +161,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div> */}
-            <div>
+            <div className='mt-16'>
               {' '}
               <h6 className='mb-4 flex justify-start font-semibold uppercase md:justify-start'>
                 Контакты
