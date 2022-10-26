@@ -6,7 +6,7 @@ const ImageWithText: React.FunctionComponent = () => {
   return (
     <div className=''>
       <div className=' relative  text-white    '>
-        <div className=' absolute  bottom-10  z-[100] object-cover p-6 pt-24  text-left  text-black lg:border-black '>
+        <div className='  bottom-14 m-14 object-cover p-6 pt-24  text-left  text-black lg:border-black '>
           Приятно познакомиться! Команда ООО "ТЕХНОПРОГРЕСС" состоит из опытных
           специалистов в области автоматики. Мы считаем автоматизацию делом
           своей жизни и связываем свою жизнь с этой профессией много лет. Весь
@@ -19,10 +19,10 @@ const ImageWithText: React.FunctionComponent = () => {
           Манипуляторы на базе сервопривода для перемещения объектов; … и многое
           другое! Пишите на электронную почту или просто звоните!
         </div>
-        <img
+        {/* <img
           src='https://thumbs.dreamstime.com/z/gas-turbine-engine-feed-gas-compressor-located-inside-pressurized-enclosure-gas-turbine-engine-used-offshore-gas-turbine-117572042.jpg'
-          className='min-h-[750px] w-full object-none  blur-sm brightness-125 lg:max-h-[800px] xl:object-cover '
-        />
+          className='min-h-[750px] w-full object-none mix-blend-overlay blur-sm brightness-125 lg:max-h-[800px] xl:object-cover '
+        /> */}
       </div>
     </div>
   );
