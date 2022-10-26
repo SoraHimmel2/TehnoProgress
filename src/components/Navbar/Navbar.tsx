@@ -56,14 +56,17 @@ const Navbar = () => {
       }
     >
       <div className='flex h-full w-full items-center justify-between px-2 md:justify-center 2xl:px-16'>
-        <Link href='/'>
-          <a>
-            <img
-              src='/images/logo-v1.png'
-              className='absolute top-3 left-0 h-14'
-            ></img>
-          </a>
-        </Link>
+        <div className='invisible lg:visible'>
+          <Link href='/'>
+            <a>
+              <img
+                src='/images/logo-vq.png'
+                className='absolute top-3 left-2 h-14'
+              ></img>
+            </a>
+          </Link>
+        </div>
+
         <div>
           <NavbarList
             linkColor={linkColor}
@@ -99,9 +102,10 @@ const Navbar = () => {
         >
           <div>
             <div className='flex w-full items-center justify-between'>
-              <Link href='/'>
-                <a></a>
-              </Link>
+              <div>
+                <img src='/images/logo-vq.png' className=' h-14'></img>
+              </div>
+
               <div
                 onClick={handleNav}
                 className=' cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400'

@@ -1,7 +1,7 @@
 const TestForm: React.FunctionComponent = () => {
   return (
     <div>
-      <div className='max-w w-full'>
+      <div className='w-full max-w-xs'>
         <form className='mb-4  rounded bg-white px-8 pt-6 pb-8 shadow-md'>
           <div className='mb-4'>
             <label className='mb-2 block text-sm font-bold text-gray-700'>

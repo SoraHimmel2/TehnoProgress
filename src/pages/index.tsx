@@ -8,7 +8,7 @@ import Seo from '@/components/Seo';
 import Partner from '@/components/Partnership/Partner';
 import Link from 'next/link';
 import ArrowLink from '@/components/links/ArrowLink';
-import SubmitForm from '@/components/Forms/SubmitForm';
+
 import TestForm from '@/components/Forms/TestForm';
 
 /**
