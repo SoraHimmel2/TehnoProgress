@@ -175,17 +175,17 @@ const Navbar = () => {
                     г. Санкт-Петербург, ул. 6-я Красноармейская,
                   </div>
                   <div className='mb-2 font-mono'>д. 10, лит. А, ПОМЕЩ. 24</div>
-                  <div className='mb-2 flex flex-wrap'>
-                    <div className='font-mono'>Почта : &nbsp;</div>
+                  <div className='mb-2 flex flex-col flex-wrap '>
+                    <div className='font-mono'>Почта &nbsp;</div>
                     <div className='font-mono'>sales@tehnoprogress78.ru</div>
                   </div>
                   <div className='w-36 border-black '>
                     <div className='flex flex-row flex-wrap justify-between '>
-                      <div className='font-mono'>Отдел продаж : &nbsp;</div>
+                      <div className='font-mono'>Отдел продаж &nbsp;</div>
                       <div className='font-mono'>8-921-956-09-42</div>
                     </div>
                     <div className='flex flex-row flex-wrap justify-between align-text-bottom'>
-                      <div className='w-36  font-mono'>Директор : &nbsp;</div>
+                      <div className='w-36  font-mono'>Директор &nbsp;</div>
                       <div className='font-mono'>8-921-211-09-40</div>
                     </div>
                   </div>
