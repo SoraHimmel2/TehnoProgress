@@ -16,11 +16,11 @@ const ContactsInfo: React.FunctionComponent = () => {
               <div className='font-mono'>Почта &nbsp;</div>
               <div className='font-mono'>sales@tehnoprogress78.ru</div>
             </div>
-            <div className='mb-2 flex flex-wrap justify-between '>
+            <div className='mb-2 flex flex-wrap  '>
               <div className='font-mono'>Отдел продаж </div>
               <div className='font-mono'>&nbsp; 8-921-956-09-42</div>
             </div>
-            <div className='mb-2 flex flex-wrap justify-between '>
+            <div className='mb-2 flex flex-wrap  '>
               <div className='font-mono'>Директор &nbsp; &nbsp; </div>
               <div className=' font-mono'>&nbsp; 8-921-211-09-40</div>
             </div>

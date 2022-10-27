@@ -3,7 +3,7 @@ import ContactsInfo from '@/components/Contacts/ContactsInfo';
 
 const Contacts: React.FunctionComponent = () => {
   return (
-    <div className='mt-20 grid grid-cols-2 md:grid-rows-2'>
+    <div className='mt-24 flex flex-col items-center justify-center gap-10 sm:flex-row'>
       <ContactsInfo></ContactsInfo>
       <Requisites></Requisites>
     </div>
