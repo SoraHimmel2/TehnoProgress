@@ -3,7 +3,7 @@ import ContactsInfo from '@/components/Contacts/ContactsInfo';
 
 const Contacts: React.FunctionComponent = () => {
   return (
-    <div className='mt-24 flex flex-col items-center justify-center gap-10 sm:flex-row'>
+    <div className='mt-24 flex flex-col items-center  sm:flex-row sm:justify-center'>
       <ContactsInfo></ContactsInfo>
       <Requisites></Requisites>
     </div>
