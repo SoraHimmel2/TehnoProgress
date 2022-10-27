@@ -21,7 +21,7 @@ const Navbar = () => {
       text: 'Продукция',
     },
     {
-      href: '/sertificates',
+      href: '/certificates',
       text: 'Серитфикаты',
     },
     {

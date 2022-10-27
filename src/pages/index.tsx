@@ -1,13 +1,8 @@
 import * as React from 'react';
 
 import ImageWithText from '@/components/MainPage/ImageWithText';
-import Navbar from '@/components/Navbar/Navbar';
 
-import ProductList from '@/components/Products/ProductList';
 import Seo from '@/components/Seo';
-
-import Link from 'next/link';
-import ArrowLink from '@/components/links/ArrowLink';
 
 import SubmitForm from '@/components/Forms/SubmitForm';
 
@@ -33,17 +28,6 @@ export default function HomePage() {
           <ImageWithText></ImageWithText>
         </section>
 
-        <section>
-          <h1 className='text-center'>Контакты</h1>
-          <div>
-            <div className='m-14 text-center'>
-              Далеко-далеко за словесными горами в стране гласных и согласных
-              живут рыбные тексты. Знаках реторический, ее инициал за страна
-              свою курсивных бросил эта, агентство большого имени страну
-              предупредила свой рекламных родного. Предупреждал, свое.
-            </div>
-          </div>
-        </section>
         {/* <section id='partnership'>
           <h1 className='text-center'>Партнеры</h1>
           <div className='grid grid-cols-1 items-center gap-8  md:grid-cols-2 '>
