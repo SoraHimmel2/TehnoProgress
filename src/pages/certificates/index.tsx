@@ -6,9 +6,19 @@ const Certificate: React.FunctionComponent = () => {
   const imageSrc = query.certificateName as string;
 
   return (
-    <div className='mt-24 flex flex-col justify-center gap-8 md:flex-row'>
-      <img className='mb-4' src={`/images/Festo.jpg`}></img>
-      <img className='m-4' src={`/images/Aignep.png`}></img>
+    <div className='flex justify-center'>
+      <div className='mt-24 flex flex-col items-center gap-8 xl:container  xl:flex-row'>
+        <div className='flex w-full  justify-center rounded   p-2 '>
+          <img src='/images/Festo.jpg ' className='max-h-[720px]' alt='image' />
+        </div>
+        <div className='flex w-full   justify-center rounded  p-2 '>
+          <img
+            src='/images/Aignep.png '
+            className='max-h-[720px]'
+            alt='image'
+          />
+        </div>
+      </div>
     </div>
   );
 };
