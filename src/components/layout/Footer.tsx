@@ -17,7 +17,7 @@ const Footer: React.FunctionComponent = () => {
               <img src='/images/logo-vq.png' className='w-96'></img>
             </h6>
           </div>
-          <div className='flex flex-col items-start'>
+          {/* <div className='flex flex-col items-start'>
             <h6 className='mb-4 font-semibold uppercase'>Сертификаты</h6>
 
             <div className='mb-2'>
@@ -30,7 +30,7 @@ const Footer: React.FunctionComponent = () => {
                 <a className='font-mono'>Aignep</a>
               </Link>
             </div>
-          </div>
+          </div> */}
 
           <div className='flex flex-col items-start'>
             <h6 className=' mb-4 font-semibold uppercase'>Контакты</h6>
@@ -77,13 +77,13 @@ const Footer: React.FunctionComponent = () => {
               <div className='font-mono'>ОГРН &nbsp;</div>
               <div className=' font-mono'>1207800126247</div>
             </div>
-            <div className='mb-2 flex flex-wrap justify-between '>
+            <div className='mb-2 flex w-80 flex-wrap justify-between'>
               <div className='font-mono'>
                 Расчетный счет &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               </div>
               <div className=' font-mono'>40702810403000066173</div>
             </div>
-            <div className='mb-2 flex flex-wrap justify-between '>
+            <div className='mb-2 flex w-80 flex-wrap justify-between'>
               <div className='font-mono'>Корреспондентский счет &nbsp;</div>
               <div className=' font-mono'>30101810100000000723</div>
             </div>
