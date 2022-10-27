@@ -20,6 +20,14 @@ const Navbar = () => {
       href: '/products',
       text: 'Продукция',
     },
+    {
+      href: '/sertificates',
+      text: 'Серитфикаты',
+    },
+    {
+      href: '/contacts',
+      text: 'Контакты',
+    },
   ];
 
   const handleNav = () => {
@@ -52,7 +60,7 @@ const Navbar = () => {
             linkColor={linkColor}
             ulClassName='hidden md:flex'
             liArray={listItemsArray}
-            liClassName='mx-8 text-sm uppercase hover:border-b'
+            liClassName='mx-8 text-xl font-bold uppercase hover:border-b'
           ></NavbarList>
           {/* Hamburger Icon */}
           <div
