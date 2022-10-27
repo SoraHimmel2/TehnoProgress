@@ -1,7 +1,7 @@
 const Requisites: React.FunctionComponent = () => {
   return (
-    <div className='mx-6 py-10  '>
-      <div className='flex flex-col justify-center'>
+    <div className=' '>
+      <div className=''>
         <div className='flex  w-72 flex-wrap'>
           <div className='font-mono'>Банк: &nbsp;</div>
           <div className='font-mono'>Филиал "Северная столица" &nbsp;</div>

@@ -2,9 +2,9 @@ const ContactsInfo: React.FunctionComponent = () => {
   return (
     <div>
       {' '}
-      <div className='mx-6 py-10 text-center md:text-left'>
-        <div className='flex flex-col justify-center gap-10 sm:grid sm:grid-cols-2 lg:flex lg:flex-row'>
-          <div className='flex flex-col items-start'>
+      <div className=''>
+        <div className=''>
+          <div className=''>
             <div className='flex w-60 flex-wrap'>
               <div className='font-mono'>Адрес:&nbsp;</div>
               <div className='font-mono'>г. Санкт-Петербург,</div>

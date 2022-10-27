@@ -7,8 +7,8 @@ const Certificate: React.FunctionComponent = () => {
 
   return (
     <div className='flex flex-col justify-center'>
-      <img className='m-24' src={`/images/Festo.jpg`}></img>
-      <img className='m-24' src={`/images/Aignep.png`}></img>
+      <img className='mt-24' src={`/images/Festo.jpg`}></img>
+      <img className='m-4' src={`/images/Aignep.png`}></img>
     </div>
   );
 };
