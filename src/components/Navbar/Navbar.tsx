@@ -22,7 +22,7 @@ const Navbar = () => {
     },
     {
       href: '/certificates',
-      text: 'Серитфикаты',
+      text: 'Сертфикаты',
     },
     {
       href: '/contacts',
