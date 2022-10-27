@@ -6,7 +6,7 @@ const Certificate: React.FunctionComponent = () => {
   const imageSrc = query.certificateName as string;
 
   return (
-    <div className='flex justify-center '>
+    <div className='flex flex-col justify-center'>
       <img className='m-24' src={`/images/Festo.jpg`}></img>
       <img className='m-24' src={`/images/Aignep.png`}></img>
     </div>
