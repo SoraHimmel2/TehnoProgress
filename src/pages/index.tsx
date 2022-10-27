@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar/Navbar';
 
 import ProductList from '@/components/Products/ProductList';
 import Seo from '@/components/Seo';
-import Partner from '@/components/Partnership/Partner';
+
 import Link from 'next/link';
 import ArrowLink from '@/components/links/ArrowLink';
 
@@ -44,7 +44,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <section id='partnership'>
+        {/* <section id='partnership'>
           <h1 className='text-center'>Партнеры</h1>
           <div className='grid grid-cols-1 items-center gap-8  md:grid-cols-2 '>
             <div className='mx-10 my-8 overflow-hidden rounded border-primary-900  shadow-xl  xl:mx-36'>
@@ -123,7 +123,7 @@ export default function HomePage() {
           </div>
 
           <div className='flex'></div>
-        </section>
+        </section> */}
         <section className=''></section>
         <h1 className='py-4 text-center'>Связаться с нами</h1>
         <div className='flex  justify-center '>
