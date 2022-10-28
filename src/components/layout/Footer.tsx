@@ -31,7 +31,7 @@ const Footer: React.FunctionComponent = () => {
           </div> */}
 
           <div className='flex flex-col items-start  border-black'>
-            <img src='/images/logo-vq.png' className='w-60'></img>
+            <img src='/images/logo-vq.png' className='w-72 md:w-60'></img>
             <h6 className=' mb-4 font-semibold uppercase'>Контакты</h6>
             <div className='w-60 flex-col flex-wrap font-sans'>
               <div className=''>Адрес:&nbsp;</div>
