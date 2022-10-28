@@ -42,15 +42,15 @@ const Footer: React.FunctionComponent = () => {
             </div>
 
             <div className='mb-2 flex flex-wrap'>
-              <div className='font-mono'>Почта &nbsp;</div>
+              <div className='font-mono'>Почта: &nbsp;</div>
               <div className='font-mono'>sales@tehnoprogress78.ru</div>
             </div>
             <div className='mb-2 flex flex-wrap justify-between '>
-              <div className='font-mono'>Отдел продаж </div>
+              <div className='font-mono'>Отдел продаж: </div>
               <div className='font-mono'>&nbsp; 8-921-956-09-42</div>
             </div>
             <div className='mb-2 flex flex-wrap justify-between '>
-              <div className='font-mono'>Директор &nbsp; &nbsp; </div>
+              <div className='font-mono'>Директор: &nbsp; &nbsp; </div>
               <div className=' font-mono'>&nbsp; 8-921-211-09-40</div>
             </div>
           </div>
@@ -62,29 +62,29 @@ const Footer: React.FunctionComponent = () => {
               <div className='mb-2 font-mono'>АО "Райфайзенбанк"</div>
             </div>
             <div className='mb-2 flex flex-wrap justify-between '>
-              <div className='font-mono'>БИК банка&nbsp;</div>
+              <div className='font-mono'>БИК банка:&nbsp;</div>
               <div className=' font-mono'>044030723</div>
             </div>
             <div className='mb-2 flex flex-wrap'>
-              <div className='font-mono'>ИНН &nbsp;</div>
+              <div className='font-mono'>ИНН: &nbsp;</div>
               <div className='font-mono'>&nbsp;7801688448</div>
             </div>
             <div className='mb-2 flex flex-wrap justify-between '>
-              <div className='font-mono'>КПП &nbsp;</div>
+              <div className='font-mono'>КПП: &nbsp;</div>
               <div className='font-mono'>&nbsp;783801001</div>
             </div>
             <div className='mb-2 flex flex-wrap justify-between '>
-              <div className='font-mono'>ОГРН &nbsp;</div>
+              <div className='font-mono'>ОГРН: &nbsp;</div>
               <div className=' font-mono'>1207800126247</div>
             </div>
             <div className='mb-2 flex w-80 flex-wrap justify-between'>
               <div className='font-mono'>
-                Расчетный счет &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                Расчетный счет: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
               </div>
               <div className=' font-mono'>40702810403000066173</div>
             </div>
             <div className='mb-2 flex w-80 flex-wrap justify-between'>
-              <div className='font-mono'>Корреспондентский счет &nbsp;</div>
+              <div className='font-mono'>Корреспондентский счет: &nbsp;</div>
               <div className=' font-mono'>30101810100000000723</div>
             </div>
           </div>
