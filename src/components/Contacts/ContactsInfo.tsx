@@ -1,6 +1,6 @@
 const ContactsInfo: React.FunctionComponent = () => {
   return (
-    <div className='my-8  grid  auto-cols-max  grid-cols-2 gap-4  md:gap-40 lg:w-4/5'>
+    <div className='my-8  grid  auto-cols-max  grid-cols-2 gap-0  md:gap-40 lg:w-4/5'>
       <div className='flex   flex-col  border-primary-900 shadow-xl'>
         <div className='flex-col  p-4'>
           <div className='flex flex-wrap'>
