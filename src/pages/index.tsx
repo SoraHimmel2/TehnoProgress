@@ -109,10 +109,6 @@ export default function HomePage() {
           <div className='flex'></div>
         </section> */}
         <section className=''></section>
-        <h1 className='py-4 text-center'>Связаться с нами</h1>
-        <div className='flex  justify-center '>
-          <SubmitForm></SubmitForm>
-        </div>
       </main>
     </div>
   );
