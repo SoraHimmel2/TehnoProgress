@@ -1,36 +1,44 @@
 const Requisites: React.FunctionComponent = () => {
   return (
-    <div className=''>
-      <div className='flex  w-72 flex-wrap'>
-        <div className='font-mono'>Банк: &nbsp;</div>
-        <div className='font-mono'>Филиал "Северная столица" &nbsp;</div>
-        <div className='mb-2 font-mono'>АО "Райфайзенбанк"</div>
-      </div>
-      <div className='mb-2 flex flex-wrap  '>
-        <div className='font-mono'>БИК банка&nbsp;</div>
-        <div className=' font-mono'>044030723</div>
-      </div>
-      <div className='mb-2 flex flex-wrap'>
-        <div className='font-mono'>ИНН &nbsp;</div>
-        <div className='font-mono'>&nbsp;7801688448</div>
-      </div>
-      <div className='mb-2 flex flex-wrap  '>
-        <div className='font-mono'>КПП &nbsp;</div>
-        <div className='font-mono'>&nbsp;783801001</div>
-      </div>
-      <div className='mb-2 flex flex-wrap  '>
-        <div className='font-mono'>ОГРН &nbsp;</div>
-        <div className=' font-mono'>1207800126247</div>
-      </div>
-      <div className='mb-2 flex w-80 flex-wrap '>
-        <div className='font-mono'>
-          Расчетный счет &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <div className='my-8  grid  auto-cols-max  grid-cols-2 gap-14  md:gap-40 lg:w-4/5'>
+      <div className='flex flex-col  border-primary-900  shadow-xl'>
+        <div className='flex-col p-4'>
+          <div className='flex flex-wrap'>
+            <div className=''>ОГРН: </div>
+            <div>&nbsp; 1207800126247</div>
+          </div>
+          <div className='flex flex-wrap'>
+            <div className=''>Корреспондентский счет: </div>
+            <div>&nbsp; 30101810100000000723</div>
+          </div>
+          <div className='flex flex-wrap'>
+            <div className=''> Расчетный счет: </div>
+            <div>&nbsp; 40702810403000066173</div>
+          </div>
+          <div className='flex flex-wrap'>
+            <div className=''>ИНН : </div>
+            <div>&nbsp; 7801688448</div>
+          </div>
+          <div className='flex flex-wrap'>
+            <div className=''>КПП : </div>
+            <div>&nbsp; 783801001</div>
+          </div>
         </div>
-        <div className=' font-mono'>40702810403000066173</div>
       </div>
-      <div className='mb-2 flex w-80 flex-wrap '>
-        <div className='font-mono'>Корреспондентский счет &nbsp;</div>
-        <div className=' font-mono'>30101810100000000723</div>
+      <div className=' flex flex-col  border-primary-900  shadow-xl'>
+        <div className='flex-col px-4'>
+          <div className='flex flex-wrap'>
+            <div className=''>Банк: &nbsp; </div>
+            <div>&nbsp; Филиал "Северная столица"</div>
+            <div className=''>&nbsp; АО "Райфайзенбанк"</div>
+          </div>
+        </div>
+        <div className='flex-col px-4'>
+          <div className='flex  items-center'>
+            <div className=''>БИК банка:&nbsp; </div>
+            <div>&nbsp; 044030723</div>
+          </div>
+        </div>
       </div>
     </div>
   );

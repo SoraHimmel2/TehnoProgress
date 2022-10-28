@@ -1,24 +1,31 @@
 const ContactsInfo: React.FunctionComponent = () => {
   return (
-    <div className=''>
-      <div className='flex w-72 flex-wrap'>
-        <div className='font-mono'>Адрес:&nbsp;</div>
-        <div className='font-mono'>г. Санкт-Петербург,</div>
-        <div>ул. 6-я Красноармейская,</div>
-        <div className='mb-2 font-mono'>д. 10, лит. А, ПОМЕЩ. 24</div>
+    <div className='my-8  grid  auto-cols-max  grid-cols-2 gap-14  md:gap-40 lg:w-4/5'>
+      <div className='flex   flex-col  border-primary-900 shadow-xl'>
+        <div className='flex-col  p-4'>
+          <div className='flex flex-wrap'>
+            <div className=''>Отдел продаж: </div>
+            <div className=''>&nbsp; 8-921-956-09-42</div>
+          </div>
+          <div className='flex flex-wrap'>
+            <div className=''>Директор: &nbsp; &nbsp; &nbsp; &nbsp; </div>
+            <div className=''>&nbsp; 8-921-211-09-40</div>
+          </div>
+          <div className='flex flex-wrap'>
+            <div className=''>Почта: &nbsp;</div>
+            <div className=''>sales@tehnoprogress78.ru</div>
+          </div>
+        </div>
       </div>
 
-      <div className='mb-2 flex flex-wrap'>
-        <div className='font-mono'>Почта &nbsp;</div>
-        <div className='font-mono'>sales@tehnoprogress78.ru</div>
-      </div>
-      <div className='mb-2 flex flex-wrap  '>
-        <div className='font-mono'>Отдел продаж </div>
-        <div className='font-mono'>&nbsp; 8-921-956-09-42</div>
-      </div>
-      <div className='mb-2 flex flex-wrap  '>
-        <div className='font-mono'>Директор &nbsp; &nbsp; </div>
-        <div className=' font-mono'>&nbsp; 8-921-211-09-40</div>
+      <div className='flex flex-col border-primary-900  shadow-xl '>
+        <div className='flex-col p-4'>
+          <div className='flex flex-wrap '>
+            <div className=''>Адрес: г. Санкт-Петербург,&nbsp;</div>
+            <div>ул. 6-я Красноармейская,</div>
+            <div className=''>д. 10, лит. А, ПОМЕЩ. 24</div>
+          </div>
+        </div>
       </div>
     </div>
   );
