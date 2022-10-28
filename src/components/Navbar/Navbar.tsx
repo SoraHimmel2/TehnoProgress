@@ -21,12 +21,16 @@ const Navbar = () => {
       text: 'Продукция',
     },
     {
-      href: '/certificates',
-      text: 'Сертфикаты',
+      href: '',
+      text: 'Скачать',
     },
     {
       href: '/contacts',
       text: 'Контакты',
+    },
+    {
+      href: '/',
+      text: 'Обратная связь',
     },
   ];
 
@@ -60,7 +64,7 @@ const Navbar = () => {
             linkColor={linkColor}
             ulClassName='hidden md:flex'
             liArray={listItemsArray}
-            liClassName='mx-8 text-xl font-bold uppercase hover:border-b'
+            liClassName='mx-8 text-lg font-bold uppercase hover:border-b'
           ></NavbarList>
           {/* Hamburger Icon */}
           <div
@@ -71,10 +75,10 @@ const Navbar = () => {
             <AiOutlineMenu size={25} />
           </div>
         </div>
-        <div className='visible  lg:visible'>
+        <div className='visible  xl:visible'>
           <Link href='/'>
             <a>
-              <img src='/images/logo-vq.png' className='  h-14 px-16'></img>
+              <img src='/images/logo-vq.png' className='h-10   px-16 '></img>
             </a>
           </Link>
         </div>
@@ -123,7 +127,7 @@ const Navbar = () => {
               linkColor={linkColor}
               ulClassName='uppercase'
               liArray={listItemsArray}
-              liClassName='py-4 text-sm'
+              liClassName='py-3 text-sm'
             ></NavbarList>
 
             {/* <div className='pt-40'>
@@ -164,29 +168,29 @@ const Navbar = () => {
                 </Link>
               </div>
             </div> */}
-            <div className='mt-16'>
+            <div className='mt-4'>
               <h6 className='mb-4 flex justify-start font-semibold uppercase md:justify-start'>
                 Контакты
               </h6>
               <p className='mb-2 flex items-center justify-center md:justify-start'>
                 <div className='flex-col '>
-                  <div className='font-mono'>Адрес :&nbsp;</div>
-                  <div className='font-mono'>
+                  <div className=''>Адрес :&nbsp;</div>
+                  <div className=''>
                     г. Санкт-Петербург, ул. 6-я Красноармейская,
                   </div>
-                  <div className='mb-2 font-mono'>д. 10, лит. А, ПОМЕЩ. 24</div>
+                  <div className='mb-2 '>д. 10, лит. А, ПОМЕЩ. 24</div>
                   <div className='mb-2 flex flex-col flex-wrap '>
-                    <div className='font-mono'>Почта &nbsp;</div>
-                    <div className='font-mono'>sales@tehnoprogress78.ru</div>
+                    <div className=''>Почта &nbsp;</div>
+                    <div className=''>sales@tehnoprogress78.ru</div>
                   </div>
                   <div className='w-36 border-black '>
                     <div className='flex flex-row flex-wrap justify-between '>
-                      <div className='font-mono'>Отдел продаж &nbsp;</div>
-                      <div className='font-mono'>8-921-956-09-42</div>
+                      <div className=''>Отдел продаж &nbsp;</div>
+                      <div className=''>8-921-956-09-42</div>
                     </div>
                     <div className='flex flex-row flex-wrap justify-between align-text-bottom'>
-                      <div className='w-36  font-mono'>Директор &nbsp;</div>
-                      <div className='font-mono'>8-921-211-09-40</div>
+                      <div className='w-36  '>Директор &nbsp;</div>
+                      <div className=''>8-921-211-09-40</div>
                     </div>
                   </div>
                 </div>
