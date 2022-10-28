@@ -29,7 +29,7 @@ const Navbar = () => {
       text: 'Контакты',
     },
     {
-      href: '/',
+      href: '/feedback',
       text: 'Обратная связь',
     },
   ];
