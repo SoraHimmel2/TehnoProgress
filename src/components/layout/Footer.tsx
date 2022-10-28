@@ -54,11 +54,11 @@ const Footer: React.FunctionComponent = () => {
             </div>
           </div>
 
-          <div className='mt-12 flex-col  border-black lg:flex-none'>
+          <div className=' flex-col border-black  sm:mt-12 lg:flex-none'>
             <h6 className='mb-4 pr-36 text-left font-semibold uppercase lg:text-center'>
               Реквизиты
             </h6>
-            <div className='flex flex-col items-start gap-8 lg:flex-row'>
+            <div className='flex flex-col items-start gap-2 sm:gap-8 lg:flex-row'>
               <div>
                 <div className='flex-col  flex-wrap '>
                   <div className=''>Банк: &nbsp;</div>
