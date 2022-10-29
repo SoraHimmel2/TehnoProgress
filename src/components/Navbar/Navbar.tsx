@@ -58,11 +58,40 @@ const Navbar = () => {
           : 'fixed top-0 z-[100] h-20 w-full'
       }
     >
-      <div className='flex h-full w-full items-center justify-between px-2 md:flex-row-reverse  2xl:px-16'>
-        <div>
+      <div className='flex h-full w-full items-center  justify-between px-2 lg:flex-row-reverse   2xl:px-16'>
+        <div className='flex lg:flex-1 2xl:ml-40'>
+          <div className='  border-black'>
+            <NavbarList
+              linkColor={linkColor}
+              ulClassName='hidden lg:flex'
+              liArray={listItemsArray}
+              liClassName=' lg:mx-5 xl:mx-8 text-lg font-bold uppercase hover:border-b'
+            ></NavbarList>
+            {/* Hamburger Icon */}
+            <div
+              style={{ color: `${linkColor}` }}
+              onClick={handleNav}
+              className='px-4 lg:hidden'
+            >
+              <AiOutlineMenu size={25} />
+            </div>
+          </div>
+        </div>
+
+        <div className='visible   border-black xl:visible'>
+          <Link href='/'>
+            <a>
+              <img
+                src='/images/logo-vq.png'
+                className=' h-14  border-red-500   lg:mx-4  xl:mx-16 '
+              ></img>
+            </a>
+          </Link>
+        </div>
+        <div className='invisible  border-black lg:hidden'>
           <NavbarList
             linkColor={linkColor}
-            ulClassName='hidden md:flex'
+            ulClassName='hidden lg:flex'
             liArray={listItemsArray}
             liClassName='mx-8 text-lg font-bold uppercase hover:border-b'
           ></NavbarList>
@@ -70,17 +99,10 @@ const Navbar = () => {
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
-            className='px-4 md:hidden'
+            className='px-4 lg:hidden'
           >
             <AiOutlineMenu size={25} />
           </div>
-        </div>
-        <div className='visible  xl:visible'>
-          <Link href='/'>
-            <a>
-              <img src='/images/logo-vq.png' className='h-10   px-16 '></img>
-            </a>
-          </Link>
         </div>
       </div>
 
@@ -90,7 +112,7 @@ const Navbar = () => {
         onClick={handleNav}
         className={
           nav
-            ? 'absolute top-10 right-6 z-[60] flex h-14 w-14 cursor-pointer items-center  justify-center  border-none bg-none p-3  md:hidden'
+            ? 'absolute top-10 right-6 z-[60] flex h-14 w-14 cursor-pointer items-center  justify-center  border-none bg-none p-3  lg:hidden'
             : 'hidden'
         }
       >
@@ -103,14 +125,14 @@ const Navbar = () => {
       <div
         onClick={handleNav}
         className={
-          nav ? 'fixed left-0 top-0 h-screen w-full bg-black/70 md:hidden' : ''
+          nav ? 'fixed left-0 top-0 h-screen w-full bg-black/70 lg:hidden' : ''
         }
       >
         {/* Side Drawer Menu */}
         <div
           className={
             nav
-              ? ' fixed left-0 top-0 h-screen w-[75%] bg-[#ecf0f3] p-10 duration-500 ease-in sm:w-[60%] md:w-[45%]'
+              ? ' fixed left-0 top-0 h-screen w-[75%] bg-[#ecf0f3] p-10 duration-500 ease-in sm:w-[60%] md:w-[45%] '
               : 'invisible fixed left-[-100%] top-0 p-10 duration-500 ease-in'
           }
         >
@@ -130,44 +152,6 @@ const Navbar = () => {
               liClassName='py-3 text-sm'
             ></NavbarList>
 
-            {/* <div className='pt-40'>
-              <div className='my-4 flex w-full items-center justify-between sm:w-[80%]'>
-                <a
-                  href='https://www.linkedin.com/in/clint-briley-50056920a/'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <div className='cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-105'>
-                    <FaLinkedinIn />
-                  </div>
-                </a>
-                <a
-                  href='https://github.com/fireclint'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <div className='cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-105'>
-                    <FaGithub />
-                  </div>
-                </a>
-                <Link href='/#contact'>
-                  <div
-                    onClick={() => setNav(!nav)}
-                    className='cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-105'
-                  >
-                    <AiOutlineMail />
-                  </div>
-                </Link>
-                <Link href='/resume'>
-                  <div
-                    onClick={() => setNav(!nav)}
-                    className='cursor-pointer rounded-full p-3 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-105'
-                  >
-                    <BsFillPersonLinesFill />
-                  </div>
-                </Link>
-              </div>
-            </div> */}
             <div className='mt-4'>
               <h6 className='mb-4 flex justify-start font-semibold uppercase md:justify-start'>
                 Контакты
