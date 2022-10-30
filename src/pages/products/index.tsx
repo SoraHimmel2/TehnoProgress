@@ -54,13 +54,14 @@ const fittings: ProductProps[] = [
     classProperty: 'aspect-square w-full  scale-150 object-contain p-7',
   },
   {
-    imageSrc: 'images/products/segmentBallValve.jpg',
+    imageSrc: 'images/products/segmentBallValve.png',
     title: 'Сегментные клапана',
     description:
       'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
+    classProperty: 'aspect-square w-full   object-contain p-7',
   },
   {
     imageSrc: 'images/products/globeValves.jpg',
