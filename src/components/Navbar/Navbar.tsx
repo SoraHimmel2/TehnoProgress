@@ -151,7 +151,7 @@ const Navbar = () => {
               liArray={listItemsArray}
               liClassName='py-3 text-sm'
             ></NavbarList>
-
+            <div className='my-4 border-b border-gray-300'></div>
             <div className='mt-4'>
               <h6 className='mb-4 flex justify-start font-semibold uppercase md:justify-start'>
                 Контакты
