@@ -1,7 +1,7 @@
-import { useFormik, Formik } from 'formik';
+import { useFormik } from 'formik';
 import { useState } from 'react';
-import * as yup from 'yup';
 import InputMask from 'react-input-mask';
+import * as yup from 'yup';
 
 const SubmitForm: React.FunctionComponent = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -15,13 +15,11 @@ const SubmitForm: React.FunctionComponent = () => {
       comment: '',
     },
     onSubmit: async () => {
-      fetch('api/hello').then(async () => {
-        const response = await fetch('/api/hello', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+      const response = await fetch('/api/hello', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
 
-          body: JSON.stringify(formik.values),
-        });
+        body: JSON.stringify(formik.values),
       });
     },
     validationSchema: yup.object({
