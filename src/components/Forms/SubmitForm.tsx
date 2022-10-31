@@ -1,4 +1,4 @@
-import { useFormik } from 'formik';
+import { useFormik, Formik } from 'formik';
 import { useState } from 'react';
 import * as yup from 'yup';
 import InputMask from 'react-input-mask';
@@ -12,9 +12,15 @@ const SubmitForm: React.FunctionComponent = () => {
       name: '',
       company: '',
       phone: '',
+      comment: '',
     },
-    onSubmit: () => {
-      setSubmitted(true);
+    onSubmit: async () => {
+      const response = await fetch('/api/hello', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+
+        body: JSON.stringify(formik.values),
+      });
     },
     validationSchema: yup.object({
       name: yup
@@ -43,13 +49,17 @@ const SubmitForm: React.FunctionComponent = () => {
             return val.replace(/-|\(|\)|_|\+|\s/g, '').length > 6;
           }
         ),
+      comment: yup.string(),
     }),
   });
 
   return (
     <div>
       <div className='w-full max-w-xs sm:max-w-md md:max-w-xl '>
-        <form className='mb-4   rounded bg-white px-8 pt-6 pb-8 shadow-md'>
+        <form
+          onSubmit={formik.handleSubmit}
+          className='mb-4   rounded bg-white px-8 pt-6 pb-8 shadow-md'
+        >
           <div className='grid grid-cols-1 sm:grid-cols-2 '>
             <div className='mb-4 px-4'>
               <label className='mb-2 block text-sm font-bold text-gray-700'>
@@ -133,16 +143,21 @@ const SubmitForm: React.FunctionComponent = () => {
             </label>
             <textarea
               className='focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
-              id='username'
               placeholder=''
-              name='message'
+              name='comment'
+              value={formik.values.comment}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
             />
+            {formik.errors.comment && formik.touched.comment ? (
+              <div className='text-red-600'>{formik.errors.comment}</div>
+            ) : null}
           </div>
 
           <div className='flex items-center justify-between px-4'>
             <button
               className='focus:shadow-outline rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700 focus:outline-none'
-              type='button'
+              type='submit'
             >
               Отправить
             </button>
