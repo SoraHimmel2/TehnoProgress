@@ -15,12 +15,19 @@ const SubmitForm: React.FunctionComponent = () => {
       comment: '',
     },
     onSubmit: async () => {
-      const response = await fetch('/api/hello', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      for (let i = 0; i < 4; i++) {
+        const response = await fetch('/api/hello', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
 
-        body: JSON.stringify(formik.values),
-      });
+          body: JSON.stringify(formik.values),
+        });
+        if (response.ok) {
+          console.log(response.ok);
+          break;
+        }
+        console.log('bad');
+      }
     },
     validationSchema: yup.object({
       name: yup
