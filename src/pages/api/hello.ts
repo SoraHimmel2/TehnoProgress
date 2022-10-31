@@ -9,7 +9,7 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
   const ChatId = '447411888';
   const text = 'Файл обновлен';
  
- 
+  if(req.body.length > 0){
     console.log('req');
     console.log(req.body);
     const data = req.body;
@@ -19,5 +19,7 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
 
   
     res.status(200).json({ name: '' });
+  }
+   
 
 }
