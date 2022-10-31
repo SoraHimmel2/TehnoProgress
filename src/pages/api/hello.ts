@@ -4,7 +4,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import { Telegraf } from 'telegraf';
 
 export default function hello(req: NextApiRequest, res: NextApiResponse) {
-  res.status(200).json({ name: 'Bambang' });
+  res.status(200).json({ name: 'Bambang1' });
   const BotToken = '5472718351:AAG6QczMElHb4Bxv1dOJWyaLqmFC65SetfM';
   const ChatId = '447411888';
   const text = 'Файл обновлен';
