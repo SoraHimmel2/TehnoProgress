@@ -145,7 +145,7 @@ const Products: React.FunctionComponent = () => {
       <ProductList productList={fittings}></ProductList>
       <h1 className='text-center'>Подшипники</h1>
       <ProductList productList={bearings}></ProductList>
-      <h1 className='text-center'>Конвеерные комплектующие</h1>
+      <h1 className='text-center'>Конвейерное оборудование</h1>
       <ProductList productList={conveyorComponents}></ProductList>
     </div>
   );
