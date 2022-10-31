@@ -3,8 +3,8 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { Telegraf } from 'telegraf';
 
-export default function hello(req: NextApiRequest, res: NextApiResponse) {
-  res.status(200).json({ name: 'Bambang1' });
+export default async function hello(req: NextApiRequest, res: NextApiResponse) {
+ 
   const BotToken = '5472718351:AAG6QczMElHb4Bxv1dOJWyaLqmFC65SetfM';
   const ChatId = '447411888';
   const text = 'Файл обновлен';
@@ -14,9 +14,9 @@ export default function hello(req: NextApiRequest, res: NextApiResponse) {
 
 
 
-    // await fetch(`${telegram.url}/bot${telegram.token}/sendMessage?chat_id=${chatId}&text="${data.phone}%OA${data.message}"`);
+ 
 
     console.log("сообщение отправлено");
-
+    res.status(200).json({ name: 'Bambang1' });
 
 }
