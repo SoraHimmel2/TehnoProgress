@@ -6,7 +6,6 @@ import Seo from '@/components/Seo';
 
 import SubmitForm from '@/components/Forms/SubmitForm';
 import About from '@/components/mainPage/About';
-import TelegramBot from '@/components/Bot/TelegramBot';
 
 /**
  * SVGR Support
@@ -31,9 +30,6 @@ export default function HomePage() {
         </section>
         <section>
           <About></About>
-        </section>
-        <section>
-          <TelegramBot></TelegramBot>
         </section>
 
         <section className=''>
