@@ -15,9 +15,9 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
     const data = req.body;
 
     const bot = new Telegraf(BotToken);
-    bot.telegram.sendMessage(ChatId, `Телефон: ${data.phone} \nФИО: ${data.name}\nКомпания/должность:\n${data.company}\nEmail: ${data.email}\nКомментарий: ${data.comment}\n`)
+    bot.telegram.sendMessage(ChatId, `Телефон: ${data.phone} \nФИО: ${data.name}\nКомпания/должность:\n${data.company}\nEmail: ${data.email}\nКомментарий: ${data.comment}\n`).catch((e)=>{res.status(200).json({ error: e });} )
 
   
-    res.status(200).json({ name: 'Bambang1' });
+    res.status(200).json({ name: '' });
 
 }
