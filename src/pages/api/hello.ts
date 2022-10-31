@@ -9,14 +9,15 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
   const ChatId = '447411888';
   const text = 'Файл обновлен';
  
-    const bot = new Telegraf(BotToken);
-    bot.telegram.sendMessage(ChatId, `Телефон: ${"123"} \n Имя: ${text}`);
-
-
-
  
+    console.log('req');
+    console.log(req.body);
+    const data = req.body;
 
-    console.log("сообщение отправлено");
+    const bot = new Telegraf(BotToken);
+    bot.telegram.sendMessage(ChatId, `Телефон: ${data.phone} \nФИО: ${data.name}\nКомпания/должность:\n${data.company}\nEmail: ${data.email}\nКомментарий: ${data.comment}\n`)
+
+  
     res.status(200).json({ name: 'Bambang1' });
 
 }
