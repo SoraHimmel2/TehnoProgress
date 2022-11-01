@@ -1,10 +1,11 @@
+import SubmitButton from '@/components/buttons/SubmitButton';
 import { useFormik } from 'formik';
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import InputMask from 'react-input-mask';
 import * as yup from 'yup';
 
 const SubmitForm: React.FunctionComponent = () => {
-  const [submitted, setSubmitted] = useState(false);
+  const [submitButton, setSubmitButton] = useState(false);
 
   const formik = useFormik({
     initialValues: {
@@ -24,6 +25,11 @@ const SubmitForm: React.FunctionComponent = () => {
         });
         if (response.ok) {
           console.log(response.ok);
+
+          setTimeout(() => {
+            setSubmitButton(false);
+          }, 3000);
+          setSubmitButton(true);
           break;
         }
         console.log('bad');
@@ -162,12 +168,18 @@ const SubmitForm: React.FunctionComponent = () => {
           </div>
 
           <div className='flex items-center justify-between px-4'>
-            <button
+            {/* <button
               className='focus:shadow-outline rounded bg-blue-500 py-2 px-4 font-bold text-white hover:bg-blue-700 focus:outline-none'
               type='submit'
+              disabled={submitButton}
             >
               Отправить
-            </button>
+            </button> */}
+            <SubmitButton
+              text='Отправить'
+              type='submit'
+              disabled={submitButton}
+            ></SubmitButton>
           </div>
         </form>
       </div>
