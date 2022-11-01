@@ -54,6 +54,16 @@ const fittings: ProductProps[] = [
     classProperty: 'aspect-square w-full  scale-150 object-contain p-7',
   },
   {
+    imageSrc: 'images/products/ballValve.jpg',
+    title: 'Шаровые краны',
+    description:
+      'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
+    pdfLink:
+      'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
+    buttonText: 'Перейти в каталог',
+    classProperty: 'aspect-square w-full   object-contain p-7',
+  },
+  {
     imageSrc: 'images/products/segmentBallValve.png',
     title: 'Сегментные клапана',
     description:
@@ -135,6 +145,28 @@ const conveyorComponents: ProductProps[] = [
     classProperty: 'aspect-video w-full    p-7',
   },
 ];
+const hydraulics: ProductProps[] = [
+  {
+    imageSrc: 'images/products/duplomatic.jpg',
+    title: 'Duplomatic',
+    description:
+      'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
+    pdfLink:
+      'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
+    buttonText: 'Перейти в каталог',
+    classProperty: 'aspect-video w-full object-contain   p-7',
+  },
+  {
+    imageSrc: '',
+    title: 'Другие',
+    description:
+      'Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Жаренные продолжил ее там лучше это, всемогущая до на берегу моей рекламных, путь своего вопроса, предупредила запятой взгляд использовало инициал рукописи.',
+    pdfLink:
+      'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
+    buttonText: 'Перейти в каталог',
+    classProperty: 'aspect-video w-full    p-7',
+  },
+];
 
 const Products: React.FunctionComponent = () => {
   return (
@@ -147,6 +179,8 @@ const Products: React.FunctionComponent = () => {
       <ProductList productList={bearings}></ProductList>
       <h1 className='text-center'>Конвейерное оборудование</h1>
       <ProductList productList={conveyorComponents}></ProductList>
+      <h1 className='text-center'>Гидравлика</h1>
+      <ProductList productList={hydraulics}></ProductList>
     </div>
   );
 };
