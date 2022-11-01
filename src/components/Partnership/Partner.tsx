@@ -18,7 +18,7 @@ const Partner: React.FunctionComponent<PartnerProps> = ({
   classProperty = 'aspect-square w-full   object-contain p-7',
 }) => {
   return (
-    <div className='my-10 w-[70%] overflow-hidden     md:w-[85%] lg:w-[80%] xl:w-[70%] '>
+    <div className='my-10 w-[70%] overflow-hidden  rounded border-primary-900 shadow-xl md:w-[85%] md:border-none   md:shadow-none lg:w-[80%] xl:w-[70%] '>
       <img className={classProperty} src={imageSrc} alt='Product image' />
       <div className='px-6 py-4'>
         <h3>{title}</h3>
