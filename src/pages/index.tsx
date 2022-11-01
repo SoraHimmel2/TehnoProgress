@@ -6,6 +6,7 @@ import Seo from '@/components/Seo';
 
 import SubmitForm from '@/components/Forms/SubmitForm';
 import About from '@/components/mainPage/About';
+import PartnerList from '@/components/Partnership/PartnerList';
 
 /**
  * SVGR Support
@@ -21,23 +22,17 @@ import About from '@/components/mainPage/About';
 
 export default function HomePage() {
   return (
-    <div>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
-      <main className='grid-cols-1 justify-center gap-4'>
-        <section className='mt-24'>
-          <ImageWithText></ImageWithText>
-        </section>
-        <section>
-          <About></About>
-        </section>
-
-        <section className=''>
-          <div>
-            <h1 className='text-center'>Мы сотрудничаем</h1>
-          </div>
-        </section>
-      </main>
-    </div>
+    <main className=' '>
+      <section className='mt-24'>
+        <ImageWithText></ImageWithText>
+      </section>
+      <section>
+        <About></About>
+      </section>
+      <h1 className='text-center'>Мы сотрудничаем</h1>
+      <section className='flex justify-center  text-gray-700 '>
+        <PartnerList></PartnerList>
+      </section>
+    </main>
   );
 }
