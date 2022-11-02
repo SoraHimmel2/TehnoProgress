@@ -54,8 +54,8 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? 'fixed top-0 z-[100] h-20 w-full shadow-xl duration-300 ease-in-out'
-          : 'fixed top-0 z-[100] h-20 w-full'
+          ? 'fixed top-0 z-[80] h-20 w-full shadow-xl duration-300 ease-in-out'
+          : 'fixed top-0 z-[80] h-20 w-full'
       }
     >
       <div className='flex h-full w-full items-center  justify-between px-2 lg:flex-row-reverse   2xl:px-16'>
@@ -156,7 +156,7 @@ const Navbar = () => {
               <h6 className='mb-4 flex justify-start font-semibold uppercase md:justify-start'>
                 Контакты
               </h6>
-              <p className='mb-2 flex items-center justify-center md:justify-start'>
+              <div className='mb-2 flex items-center justify-center md:justify-start'>
                 <div className='flex-col '>
                   <div className=''>Адрес :&nbsp;</div>
                   <div className=''>
@@ -178,7 +178,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-              </p>
+              </div>
             </div>
           </div>
         </div>
