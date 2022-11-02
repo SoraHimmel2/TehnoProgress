@@ -4,7 +4,7 @@
 
 const ImageWithText: React.FunctionComponent = () => {
   return (
-    <div className='p-10 text-left'>
+    <div className='p-10 text-left md:text-center'>
       ООО "ТЕХНОПРОГРЕСС" - поставка комплектующих для производства: Пневматика,
       арматура, подшипники, конвейерные комплектующие!
     </div>
