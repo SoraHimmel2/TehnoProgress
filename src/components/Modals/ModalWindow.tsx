@@ -22,10 +22,16 @@ const ModalWindow: React.FC<ModalWindowProps> = ({ imageSrc }) => {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      size='large'
+      size='small'
     >
       <Modal.Content image>
-        <Image centered className={'scale-100'} fluid src={imageSrc} />
+        <Image
+          centered
+          className={click ? 'scale-125' : 'scale-90'}
+          fluid
+          src={imageSrc}
+          onClick={handleClick}
+        />
       </Modal.Content>
     </Modal>
   );
