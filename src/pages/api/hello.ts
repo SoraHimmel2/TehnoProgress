@@ -1,13 +1,12 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 import { NextApiRequest, NextApiResponse } from 'next';
-import { Telegraf } from 'telegraf';
 import nodemailer from 'nodemailer'
+import { Telegraf } from 'telegraf';
 
 
 export default async function hello(req: NextApiRequest, res: NextApiResponse) {
-  console.log('req');
-  console.log(req.body);
+  
   const data = req.body;
   const transporter = nodemailer.createTransport({
     host: 'smtp.yandex.ru',
@@ -28,18 +27,15 @@ const mailOptions = {
       text: `Телефон: ${data.phone} \nФИО: ${data.name}\nКомпания/должность:\n${data.company}\nEmail: ${data.email}\nКомментарий: ${data.comment}\n`, // plain text body
 
    };
-   transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-        return console.log(error);
-    }
-    console.log('Message sent: %s', info.messageId);
+   transporter.sendMail(mailOptions, () => {
+   
    
     res.status(200).send('Email has been sent');
 });
 
   const BotToken = '5472718351:AAG6QczMElHb4Bxv1dOJWyaLqmFC65SetfM';
   const ChatId = '447411888';
-  const text = 'Файл обновлен';
+  
 
 
    

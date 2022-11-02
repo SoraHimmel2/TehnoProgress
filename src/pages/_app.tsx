@@ -2,7 +2,8 @@ import { AppProps } from 'next/app';
 
 import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
-import '@/styles/colors.css';
+// import '@/styles/colors.css';
+import 'semantic-ui-css/semantic.min.css';
 
 import Layout from '@/components/layout/Layout';
 
