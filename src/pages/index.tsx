@@ -1,10 +1,9 @@
 import * as React from 'react';
-import ArrowLink from '@/components/links/ArrowLink';
+
 import ImageWithText from '@/components/MainPage/ImageWithText';
 
 import Seo from '@/components/Seo';
 
-import SubmitForm from '@/components/Forms/SubmitForm';
 import About from '@/components/mainPage/About';
 import PartnerList from '@/components/Partnership/PartnerList';
 
