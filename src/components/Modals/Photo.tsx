@@ -1,6 +1,7 @@
+import { useCallback, useEffect, useState } from 'react';
+
+import { off, on } from '@/components/Events/events';
 import ModalWindow from '@/components/Modals/ModalWindow';
-import { useState, useEffect, useCallback } from 'react';
-import { on, off } from '@/components/Events/events';
 
 interface PhotosProps {
   images: Image[];
@@ -29,14 +30,15 @@ const Photos: React.FC<PhotosProps> = ({ images, textClass, text }) => {
       <h1 className={textClass}>{text}</h1>
       <div
         id='cerificates'
-        className='mx-4 grid grid-cols-1 justify-items-center gap-0 sm:justify-items-start md:mx-12 md:grid-cols-2'
+        className='mx-4 grid grid-cols-1 justify-items-center gap-0  md:mx-12 md:grid-cols-2'
       >
         {images.map((image) => (
           <div
             key={image.id}
-            className='my-10 w-[90%] overflow-hidden  rounded border-primary-900 shadow-xl    md:w-[75%] lg:w-[60%] xl:w-[50%]'
+            className='my-10 w-[90%] overflow-hidden  rounded border-primary-900 shadow-xl    md:w-[75%] lg:w-[60%] xl:w-[60%]'
           >
             <img
+              alt='certificate image'
               className=' p-2'
               onClick={() => {
                 setPhotoSrc(image.src);
