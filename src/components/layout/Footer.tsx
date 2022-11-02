@@ -6,7 +6,7 @@ const Footer: React.FunctionComponent = () => {
       </div>
       <div className='mx-6  py-10 text-center md:text-left'>
         <div className='grid grid-cols-1 xl:grid-cols-2'>
-          <div className='grid grid-cols-1 items-center border-2 border-black md:grid-cols-2'>
+          <div className='grid grid-cols-1 items-center  md:grid-cols-2'>
             <div className=''>
               <h6 className='mb-4 flex  font-semibold uppercase '>&nbsp;</h6>
               <div className='mb-4 flex items-center justify-start'>
@@ -103,7 +103,7 @@ const Footer: React.FunctionComponent = () => {
             </div>
           </div>
 
-          <div className='grid grid-cols-1 items-center  border-2 border-black md:grid-cols-2 xl:grid-cols-3'>
+          <div className='grid grid-cols-1 items-center   md:grid-cols-2 xl:grid-cols-3'>
             <div className='mb-4'>
               <div className='text-left'>
                 <div className=''>Банк: &nbsp;</div>
