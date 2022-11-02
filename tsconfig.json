@@ -17,7 +17,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "~/*": ["./public/*"],
-      "p/*": ["./Pumps/*"],
+      "p/*": ["./Pumps/*"]
     },
     "incremental": true
   },

@@ -1,35 +1,35 @@
 const Requisites: React.FunctionComponent = () => {
   return (
-    <div className='flex flex-col  border-primary-900  shadow-xl'>
+    <div className='flex flex-col border-primary-900  text-2xl  shadow-xl'>
       <div className='flex-col px-4'>
-        <div className='flex flex-wrap'>
+        <div className='flex-col'>
           <div className=''>ОГРН: </div>
-          <div>&nbsp; 1207800126247</div>
+          <div> 1207800126247</div>
         </div>
-        <div className='flex  flex-wrap '>
+        <div className='flex flex-col '>
           <div className=''>Корреспондентский счет: </div>
-          <div>&nbsp; 30101810100000000723</div>
+          <div> 30101810100000000723</div>
         </div>
-        <div className='flex flex-wrap'>
+        <div className='flex-col'>
           <div className=''> Расчетный счет: </div>
-          <div>&nbsp; 40702810403000066173</div>
+          <div> 40702810403000066173</div>
         </div>
-        <div className='flex flex-wrap'>
+        <div className='flex-col'>
           <div className=''>ИНН : </div>
-          <div>&nbsp; 7801688448</div>
+          <div> 7801688448</div>
         </div>
-        <div className='flex flex-wrap'>
+        <div className='flex-col'>
           <div className=''>КПП : </div>
-          <div>&nbsp; 783801001</div>
+          <div> 783801001</div>
         </div>
-        <div className='flex flex-wrap'>
+        <div className='flex-col'>
           <div className=''>Банк: &nbsp; </div>
-          <div>&nbsp; Филиал "Северная столица"</div>
-          <div className=''>&nbsp; АО "Райфайзенбанк"</div>
+          <div> Филиал "Северная столица"</div>
+          <div className=''> АО "Райфайзенбанк"</div>
         </div>
-        <div className='flex  items-center'>
+        <div className='flex-col'>
           <div className=''>БИК банка:&nbsp; </div>
-          <div>&nbsp; 044030723</div>
+          <div> 044030723</div>
         </div>
       </div>
     </div>
