@@ -7,7 +7,7 @@ const ProductList: React.FunctionComponent<PartnerListProps> = ({
   productList: partnerList,
 }) => {
   return (
-    <div className='grid grid-cols-1 items-center justify-items-center gap-0 md:grid-cols-2'>
+    <div className='grid grid-cols-1 items-center justify-items-center gap-0 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
       {partnerList.map((product) => {
         return (
           <Product

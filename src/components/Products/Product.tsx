@@ -18,7 +18,7 @@ const Product: React.FunctionComponent<ProductProps> = ({
   classProperty = 'aspect-square w-full   object-contain p-7',
 }) => {
   return (
-    <div className='my-10 w-[70%] overflow-hidden  rounded border-primary-900 shadow-xl    md:w-[85%] lg:w-[80%] xl:w-[60%] '>
+    <div className='my-10 w-[70%] overflow-hidden  rounded border-primary-900 shadow-xl    md:w-[85%] lg:w-[80%] xl:w-[80%] '>
       <img className={classProperty} src={imageSrc} alt='Product image' />
       <div className='px-6 py-4'>
         <h3>{title}</h3>
