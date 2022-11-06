@@ -1,13 +1,17 @@
 import Product, { ProductProps } from '@/components/Products/Product';
 export interface PartnerListProps {
   productList: ProductProps[];
+  productListClass?: string;
+  productClass?: string;
 }
 
 const ProductList: React.FunctionComponent<PartnerListProps> = ({
   productList: partnerList,
+  productListClass = 'grid grid-cols-1 items-center justify-items-center gap-0  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4',
+  productClass,
 }) => {
   return (
-    <div className='grid grid-cols-1 items-center justify-items-center gap-0 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+    <div className={productListClass}>
       {partnerList.map((product) => {
         return (
           <Product
@@ -17,7 +21,8 @@ const ProductList: React.FunctionComponent<PartnerListProps> = ({
             description={product.description}
             pdfLink={product.pdfLink}
             buttonText={product.buttonText}
-            classProperty={product.classProperty}
+            imgClass={product.imgClass}
+            productClass={productClass ?? product.productClass}
           ></Product>
         );
       })}
