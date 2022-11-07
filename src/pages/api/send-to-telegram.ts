@@ -10,15 +10,14 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
   const data = req.body;
 
 
-  const BotToken = '5472718351:AAG6QczMElHb4Bxv1dOJWyaLqmFC65SetfM';
-  const ChatId = '447411888';
 
 
 
 
 
-  const bot = new Telegraf(BotToken);
-  bot.telegram.sendMessage(ChatId, `Телефон: ${data.phone} \nФИО: ${data.name}\nКомпания/должность:\n${data.company}\nEmail: ${data.email}\nКомментарий: ${data.comment}\n`).then(() => {
+
+  const bot = new Telegraf(process.env.BOT_TOKEN);
+  bot.telegram.sendMessage(process.env.CHAT_ID, `Телефон: ${data.phone} \nФИО: ${data.name}\nКомпания/должность:\n${data.company}\nEmail: ${data.email}\nКомментарий: ${data.comment}\n`).then(() => {
 
 
 
@@ -27,7 +26,7 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
   })
 
 
-  //res.status(400).json({ name: 'not ok' })
+
 
 
 
