@@ -17,7 +17,25 @@ const SubmitForm: React.FunctionComponent = () => {
     },
     onSubmit: async () => {
       for (let i = 0; i < 4; i++) {
-        const response = await fetch('/api/hello', {
+        const response = await fetch('/api/send-to-telegram', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+
+          body: JSON.stringify(formik.values),
+        });
+        if (response.ok) {
+          console.log(response.ok);
+
+          setTimeout(() => {
+            setSubmitButton(false);
+          }, 3000);
+          setSubmitButton(true);
+          break;
+        }
+        console.log('bad');
+      }
+      for (let i = 0; i < 4; i++) {
+        const response = await fetch('/api/send-to-mail', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
 
