@@ -35,7 +35,7 @@ const Photos: React.FC<PhotosProps> = ({ images, textClass, text }) => {
         {images.map((image) => (
           <div
             key={image.id}
-            className='my-10 w-[90%] overflow-hidden  rounded border-primary-900 shadow-xl    md:w-[75%] lg:w-[60%] xl:w-[60%]'
+            className='my-10 w-[90%] overflow-hidden  rounded border border-primary-600 shadow-xl    md:w-[75%] lg:w-[60%] xl:w-[60%]'
           >
             <img
               alt='certificate image'
