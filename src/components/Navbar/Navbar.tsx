@@ -67,11 +67,7 @@ const Navbar = () => {
               liClassName=' lg:mx-5 xl:mx-8 text-lg font-bold uppercase border-b border-transparent hover:border-b hover:border-gray-400 text-sky-400'
             ></NavbarList>
 
-            <div
-              style={{ color: `${linkColor}` }}
-              onClick={handleNav}
-              className='px-4 lg:hidden'
-            >
+            <div onClick={handleNav} className='px-4 lg:hidden'>
               <AiOutlineMenu size={25} />
             </div>
           </div>
@@ -94,11 +90,7 @@ const Navbar = () => {
             liClassName='mx-8 text-lg font-bold uppercase hover:border-b text-sky-400'
           ></NavbarList>
 
-          <div
-            style={{ color: `${linkColor}` }}
-            onClick={handleNav}
-            className='px-4 lg:hidden'
-          >
+          <div onClick={handleNav} className='px-4 lg:hidden'>
             <AiOutlineMenu size={25} />
           </div>
         </div>
