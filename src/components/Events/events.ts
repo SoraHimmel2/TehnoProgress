@@ -18,8 +18,8 @@ function once(eventType, listener) {
 function trigger(eventType, data?) {
   const event = new CustomEvent(eventType, { detail: data });
   document.dispatchEvent(event);
-  console.log(event);
+
 
 }
 
-export { on, once, off, trigger };
+export { off, on, once, trigger };
