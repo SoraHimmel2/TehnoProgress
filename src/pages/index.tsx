@@ -29,9 +29,9 @@ export default function HomePage() {
         <About></About>
       </section>
       <h1 className='text-center'>Мы сотрудничаем</h1>
-      <section className='flex justify-center p-4 text-gray-700 '>
+      <section className='flex justify-center  text-gray-700 '>
         {/* <PartnerList></PartnerList> */}
-        <img src='images/logos.png'></img>
+        <img className='px-10' src='images/logos.png'></img>
       </section>
     </main>
   );
