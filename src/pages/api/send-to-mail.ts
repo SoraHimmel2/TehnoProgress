@@ -25,6 +25,8 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
     text: `Телефон: ${data.phone} \nФИО: ${data.name}\nКомпания/должность:\n${data.company}\nEmail: ${data.email}\nКомментарий: ${data.comment}\n`, // plain text body
 
   };
-  transporter.sendMail(mailOptions);
-  res.status(200).json({ error: 'ok' });
+  transporter.sendMail(mailOptions).then(() => {
+    res.status(200).json({ error: 'ok' });
+  });
+
 };
