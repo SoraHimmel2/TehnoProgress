@@ -34,7 +34,7 @@ const SubmitForm: React.FunctionComponent = () => {
         }
         console.log('bad');
       }
-      for (let i = 0; i < 6; i++) {
+      for (let i = 0; i < 4; i++) {
         const response = await fetch('/api/send-to-mail', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
