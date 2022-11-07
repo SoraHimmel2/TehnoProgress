@@ -2,7 +2,6 @@ import Link from 'next/link';
 import React from 'react';
 
 export interface NavbarListProps {
-  linkColor: string;
   ulClassName: string;
   liArray: liProps[];
   liClassName: string;
@@ -13,14 +12,13 @@ export interface liProps {
 }
 
 const NavbarList: React.FunctionComponent<NavbarListProps> = ({
-  linkColor,
   ulClassName,
   liArray,
   liClassName,
 }) => {
   return (
     <div>
-      <ul style={{ color: `${linkColor}` }} className={ulClassName}>
+      <ul className={ulClassName}>
         {liArray.map((element) => {
           return (
             <li key={element.text} className={liClassName}>

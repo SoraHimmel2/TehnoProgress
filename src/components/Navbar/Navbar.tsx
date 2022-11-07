@@ -8,7 +8,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('#1f2937');
+  const [linkColor, setLinkColor] = useState('color-blue-600');
 
   const listItemsArray: liProps[] = [
     {
@@ -54,20 +54,19 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? 'fixed top-0 z-[80] h-20 w-full shadow-xl duration-300 ease-in-out'
+          ? 'fixed top-0 z-[80] h-20 w-full shadow-xl duration-300 ease-in-out '
           : 'fixed top-0 z-[80] h-20 w-full'
       }
     >
       <div className='flex h-full w-full items-center  justify-between px-2 lg:flex-row-reverse   2xl:px-16'>
         <div className='flex lg:flex-1 2xl:ml-40'>
-          <div className='  border-black'>
+          <div className='   border-black'>
             <NavbarList
-              linkColor={linkColor}
               ulClassName='hidden lg:flex'
               liArray={listItemsArray}
-              liClassName=' lg:mx-5 xl:mx-8 text-lg font-bold uppercase hover:border-b'
+              liClassName=' lg:mx-5 xl:mx-8 text-lg font-bold uppercase border-b border-transparent hover:border-b hover:border-gray-400 text-sky-400'
             ></NavbarList>
-            {/* Hamburger Icon */}
+
             <div
               style={{ color: `${linkColor}` }}
               onClick={handleNav}
@@ -83,19 +82,18 @@ const Navbar = () => {
             <a>
               <img
                 src='/images/logo-vq.png'
-                className=' h-14  border-red-500   lg:mx-4  xl:mx-16 '
+                className=' h-14  border-red-500   lg:mx-20  xl:mx-24 '
               ></img>
             </a>
           </Link>
         </div>
         <div className='invisible  border-black lg:hidden'>
           <NavbarList
-            linkColor={linkColor}
-            ulClassName='hidden lg:flex'
+            ulClassName='hidden lg:flex '
             liArray={listItemsArray}
-            liClassName='mx-8 text-lg font-bold uppercase hover:border-b'
+            liClassName='mx-8 text-lg font-bold uppercase hover:border-b text-sky-400'
           ></NavbarList>
-          {/* Hamburger Icon */}
+
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
@@ -105,6 +103,35 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {/* <div className='grid grid-cols-[30%_70%] items-center justify-items-center '>
+        <div className=' flex  justify-self-end border-2 border-black '>
+          <Link href='/'>
+            <a>
+              <img
+                src='/images/logo-vq.png'
+                className=' h-14  border-red-500    '
+              ></img>
+            </a>
+          </Link>
+        </div>
+        <div className='flex justify-self-center lg:flex-1 2xl:ml-40'>
+          <div className='  border-2 border-black'>
+            <NavbarList
+              ulClassName='hidden lg:flex'
+              liArray={listItemsArray}
+              liClassName=' lg:mx-5 xl:mx-8 text-lg font-bold uppercase border-b border-transparent hover:border-b hover:border-gray-400 text-sky-400'
+            ></NavbarList>
+
+            <div
+              style={{ color: `${linkColor}` }}
+              onClick={handleNav}
+              className='px-4 lg:hidden'
+            >
+              <AiOutlineMenu size={25} />
+            </div>
+          </div>
+        </div>
+      </div> */}
 
       {/* Mobile Menu */}
       {/* Overlay */}
@@ -146,7 +173,6 @@ const Navbar = () => {
           </div>
           <div className='flex flex-col py-4'>
             <NavbarList
-              linkColor={linkColor}
               ulClassName='uppercase'
               liArray={listItemsArray}
               liClassName='py-3 text-sm'
