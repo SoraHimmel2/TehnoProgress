@@ -23,7 +23,7 @@ const Product: React.FunctionComponent<ProductProps> = ({
     <div className={productClass}>
       <img className={imgClass} src={imageSrc} alt='Product image' />
       <div className='px-6 py-4'>
-        <h3 className='flex flex-col flex-wrap'>{title}</h3>
+        <h3 className='break-words'>{title}</h3>
         <div className=' z-[80] text-base text-gray-700'>{description}</div>
         {/* <div className='flex-col'>
           <div>
