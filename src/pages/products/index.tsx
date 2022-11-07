@@ -65,7 +65,8 @@ const fittings: ProductProps[] = [
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
-    imgClass: 'aspect-square w-full  md:scale-125 object-contain p-7',
+    imgClass:
+      'aspect-square w-full overflow-hidden  scale-100 object-contain p-7',
   },
   {
     imageSrc: 'images/products/ballValve.jpg',
@@ -216,7 +217,7 @@ const Products: React.FunctionComponent = () => {
       <ProductList
         productListClass=' px-2 grid grid-cols-2 items-center justify-items-center gap-2 sm:grid-cols-3  md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6'
         productList={fittings}
-        productClass='my-10 w-[100%]   rounded border-primary-900 shadow-xl  sm:w-[100%]  md:w-[100%] lg:w-[80%] xl:w-[90%] '
+        productClass='my-10 w-[100%]   rounded border-primary-900 shadow-xl  sm:w-[100%]  md:w-[100%] lg:w-[80%] xl:w-[100%] '
       ></ProductList>
       <h1 className='text-center'>Подшипники</h1>
       <ProductList
