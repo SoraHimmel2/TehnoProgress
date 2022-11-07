@@ -5,7 +5,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function hello(req: NextApiRequest, res: NextApiResponse) {
 
-  const data = req.body;
+  const data = req.body
 
 
 
