@@ -1,6 +1,6 @@
 const ContactsInfo: React.FunctionComponent = () => {
   return (
-    <div className='flex flex-col items-start rounded border border-primary-600 p-4 text-2xl shadow-xl'>
+    <div className='flex flex-col items-start rounded border border-primary-600 p-4 text-xl shadow-xl'>
       <div>
         <h6 className=' mb-4 font-semibold uppercase'>Контакты</h6>
         <div className='mb-4 flex items-center justify-start'>
