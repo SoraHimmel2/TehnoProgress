@@ -21,18 +21,20 @@ import PartnerList from '@/components/Partnership/PartnerList';
 
 export default function HomePage() {
   return (
-    <main className=' '>
-      <section className='mt-24'>
-        <ImageWithText></ImageWithText>
-      </section>
-      <section>
-        <About></About>
-      </section>
-      <h1 className='text-center'>Мы сотрудничаем</h1>
-      <section className='flex justify-center  text-gray-700 '>
-        {/* <PartnerList></PartnerList> */}
-        <img className='px-10' src='images/logos.png'></img>
-      </section>
+    <main className='flex justify-center'>
+      <div className='container'>
+        <section className='mt-24'>
+          <ImageWithText></ImageWithText>
+        </section>
+        <section>
+          <About></About>
+        </section>
+        <h1 className='text-center'>Мы сотрудничаем</h1>
+        <section className='flex justify-center  text-gray-700 '>
+          {/* <PartnerList></PartnerList> */}
+          <img className='px-10' src='images/logos.png'></img>
+        </section>
+      </div>
     </main>
   );
 }
