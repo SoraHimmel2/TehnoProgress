@@ -157,9 +157,14 @@ const Navbar = () => {
         >
           <div>
             <div className='flex w-full items-center justify-between'>
-              <div>
-                <img src='/images/logo-vq.png' className=' h-14 '></img>
-              </div>
+              <Link href='/'>
+                <a>
+                  <img
+                    src='/images/logo-vq.png'
+                    className=' h-14  border-red-500   lg:mx-20  xl:mx-24 '
+                  ></img>
+                </a>
+              </Link>
             </div>
             <div className='my-4 border-b border-gray-300'></div>
           </div>
