@@ -64,7 +64,7 @@ const Navbar = () => {
             <NavbarList
               ulClassName='hidden lg:flex'
               liArray={listItemsArray}
-              liClassName=' lg:mx-5 xl:mx-8 text-lg font-bold uppercase border-b border-transparent hover:border-b hover:border-gray-400 text-sky-400'
+              liClassName=' lg:mx-5 xl:mx-8 text-xl font-bold uppercase border-b border-transparent hover:border-b hover:border-gray-400 text-sky-400'
             ></NavbarList>
 
             <div onClick={handleNav} className='px-4 lg:hidden'>
