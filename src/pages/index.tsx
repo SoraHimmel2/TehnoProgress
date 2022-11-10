@@ -29,7 +29,7 @@ export default function HomePage() {
         <section>
           <About></About>
         </section>
-        <h1 className='text-center'>Мы сотрудничаем</h1>
+        <h1 className='p-6 text-center'>Мы сотрудничаем</h1>
         <section className='flex justify-center  text-gray-700 '>
           {/* <PartnerList></PartnerList> */}
           <img className='px-10' src='images/logos.png'></img>

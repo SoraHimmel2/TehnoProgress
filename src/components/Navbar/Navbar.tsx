@@ -8,7 +8,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('color-blue-600');
+  const [linkColor, setLinkColor] = useState('color-blue-400');
 
   const listItemsArray: liProps[] = [
     {
