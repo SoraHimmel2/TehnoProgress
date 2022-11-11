@@ -2,7 +2,7 @@ const ContactsInfo: React.FunctionComponent = () => {
   return (
     <div className=' mb-4  flex flex-col items-start rounded  border  border-primary-600 px-4 text-xl shadow-xl'>
       <div>
-        <h6 className=' mb-4 font-semibold uppercase'>Контакты</h6>
+        <h6 className=' my-4 font-semibold uppercase'>Контакты</h6>
         <div className='mb-4 flex items-center justify-start'>
           <svg
             aria-hidden='true'
@@ -70,7 +70,7 @@ const ContactsInfo: React.FunctionComponent = () => {
               <div className=' '> 8-921-211-09-40</div>
             </div>
           </div>
-          <div className='flex items-center justify-start'>
+          <div className='mb-4 flex items-center justify-start'>
             <svg
               aria-hidden='true'
               focusable='false'
@@ -87,7 +87,7 @@ const ContactsInfo: React.FunctionComponent = () => {
               ></path>
             </svg>
 
-            <div className='text-left'>
+            <div className='mb-4 text-left'>
               <div className=''>Отдел продаж: </div>
               <div className=''> 8-921-956-09-42</div>
             </div>
