@@ -132,7 +132,7 @@ const Requisites: React.FunctionComponent = () => {
           <ArrowLink
             className='mt-2'
             download='Карточка предприятия.docx'
-            href='requisites/requisites.docx'
+            href='requisites/Карточка предприятия.docx'
           >
             Карточка предприятия
           </ArrowLink>
