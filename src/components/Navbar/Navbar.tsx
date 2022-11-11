@@ -78,7 +78,7 @@ const Navbar = () => {
             <a>
               <img
                 src='/images/logo-vq.png'
-                className=' h-14  border-red-500   lg:mx-20  xl:mx-24 '
+                className=' h-14  border-red-500   lg:mx-14  xl:mx-24 '
               ></img>
             </a>
           </Link>

@@ -10,7 +10,7 @@ const Contacts: React.FunctionComponent = () => {
   return (
     <div className='mt-24  '>
       <div className=' flex-col'>
-        <div className='mx-12 mb-4 grid grid-cols-1  gap-10  md:grid-cols-2 '>
+        <div className='mx-12 mb-9 grid grid-cols-1  gap-10  md:grid-cols-2 '>
           <ContactsInfo />
           <Requisites />
         </div>
@@ -18,7 +18,7 @@ const Contacts: React.FunctionComponent = () => {
         <div className='flex justify-center '>
           <Photos
             text='Сертификаты'
-            textClass='text-center  mx-12'
+            textClass='text-center mb-4 mx-12'
             images={images}
           ></Photos>
         </div>

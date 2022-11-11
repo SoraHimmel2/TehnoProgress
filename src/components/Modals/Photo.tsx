@@ -30,7 +30,7 @@ const Photos: React.FC<PhotosProps> = ({ images, textClass, text }) => {
       <h1 className={textClass}>{text}</h1>
       <div
         id='cerificates'
-        className='mx-4 grid grid-cols-1 justify-items-center gap-0  md:mx-12 md:grid-cols-2'
+        className='mx-4 mb-4 grid grid-cols-1 justify-items-center gap-0  md:mx-12 md:grid-cols-2'
       >
         {images.map((image) => (
           <div

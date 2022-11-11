@@ -2,7 +2,7 @@ import ArrowLink from '@/components/links/ArrowLink';
 
 const Requisites: React.FunctionComponent = () => {
   return (
-    <div className='flex flex-col items-start  rounded border border-primary-600 p-4 text-xl shadow-xl'>
+    <div className='mb-4  flex  flex-col items-start rounded border border-primary-600 px-4 text-xl shadow-xl'>
       <div>
         <h6 className=' mb-4 font-semibold uppercase'>Реквизиты</h6>
         <div className='mb-4 flex flex-row'>
@@ -134,7 +134,7 @@ const Requisites: React.FunctionComponent = () => {
             download='Карточка предприятия.docx'
             href='requisites/requisites.docx'
           >
-            Скачать реквизиты
+            Карточка предприятия
           </ArrowLink>
         </div>
       </div>
