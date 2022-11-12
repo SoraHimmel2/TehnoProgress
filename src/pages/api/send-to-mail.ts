@@ -24,6 +24,7 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
     }
 
   });
+
   const mailOptions = {
     from: process.env.MAIL_USER, // sender address
     to: process.env.MAIL_USER, // list of receivers
