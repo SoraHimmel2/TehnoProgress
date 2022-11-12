@@ -15,8 +15,8 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
     port: 465,
     secure: true, // true for 465, false for other ports
     auth: {
-      user: process.env.MAIL_USER, // generated ethereal user
-      pass: process.env.MAIL_PASS  // generated ethereal password
+      user: 'sales@tehnoprogress78.ru', // generated ethereal user
+      pass: 'ojezhdqumneapiws'  // generated ethereal password
     },
     tls: {
       rejectUnauthorized: false
@@ -26,8 +26,8 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
   });
 
   const mailOptions = {
-    from: process.env.MAIL_USER, // sender address
-    to: process.env.MAIL_USER, // list of receivers
+    from: 'sales@tehnoprogress78.ru', // sender address
+    to: 'sales@tehnoprogress78.ru', // list of receivers
     subject: 'Клиенты', // Subject line
     text: `Телефон: ${data.phone} \nФИО: ${data.name}\nКомпания/должность:\n${data.company}\nEmail: ${data.email}\nКомментарий: ${data.comment}\n`, // plain text body
 
