@@ -2,7 +2,7 @@ const About: React.FunctionComponent = () => {
   return (
     <div>
       <h1 className='mb-6  text-center'>О нас</h1>
-      <div className=' words-wrap mb-6 break-words  px-6 text-justify xl:text-xl'>
+      <div className=' words-wrap mb-6 break-all  px-6 text-justify xl:text-xl'>
         Команда ООО "ТЕХНОПРОГРЕСС" состоит из опытных специалистов в области
         автоматики. Мы считаем автоматизацию делом своей жизни и связываем с
         этой профессией много лет. Весь наш опыт и знания к вашим услугам!
