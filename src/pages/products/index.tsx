@@ -15,7 +15,7 @@ const pneumatics: ProductProps[] = [
     imageSrc: 'https://www.festo.com/media/fox/frontend/img/svg/logo_blue.svg',
     title: 'Festo',
     description:
-      'пневмораспределители, пневмоцилиндры, фитинги, пневмошланги, датчики, пневмоострова, блоки подготовки воздуха, вакуумная техника',
+      'Пневмораспределители, пневмоцилиндры, фитинги, пневмошланги, датчики, пневмоострова, блоки подготовки воздуха, вакуумная техника',
     pdfLink:
       'https://drive.google.com/file/d/13C0MmDj_qg_w5nqWZnQPI1NWm6nBOHXt/view',
     buttonText: 'Перейти в каталог',
@@ -26,7 +26,7 @@ const pneumatics: ProductProps[] = [
     imageSrc: 'images/products/smc.jpg',
     title: 'SMC',
     description:
-      'пневмораспределители, пневмоцилиндры, фитинги, пневмошланги, датчики, пневмоострова, блоки подготовки воздуха, вакуумная техника',
+      'Пневмораспределители, пневмоцилиндры, фитинги, пневмошланги, датчики, пневмоострова, блоки подготовки воздуха, вакуумная техника',
     pdfLink:
       'https://drive.google.com/file/d/1Yg4yAEh3lSD7vnueGNHWIIn9Quy_Ubqu/view',
     buttonText: 'Перейти в каталог',
@@ -37,7 +37,7 @@ const pneumatics: ProductProps[] = [
     imageSrc: 'images/products/aignep.png',
     title: 'Aignep',
     description:
-      'пневмораспределители, пневмоцилиндры, фитинги, пневмошланги, датчики, блоки подготовки воздуха',
+      'Пневмораспределители, пневмоцилиндры, фитинги, пневмошланги, датчики, блоки подготовки воздуха',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
@@ -47,7 +47,7 @@ const pneumatics: ProductProps[] = [
   {
     imageSrc: 'images/products/pneumatic.jpg',
     title: 'Другие',
-    description: 'другие пневматические бренды',
+    description: 'Другие пневматические бренды',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
@@ -60,7 +60,7 @@ const fittings: ProductProps[] = [
     imageSrc: 'images/products/butterflyValve.jpg',
     title: 'Дисковые  затворы',
     description:
-      'затворы дисковые поворотные, ручные или с приводом (пневматическим или электрическим) с разными материалами корпуса и уплотнения, под разные задачи всех направлений промышленности от пищевой до горнодобывающей',
+      'Затворы дисковые поворотные, ручные или с приводом (пневматическим или электрическим) с разными материалами корпуса и уплотнения, под разные задачи всех направлений промышленности от пищевой до горнодобывающей',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
@@ -71,7 +71,7 @@ const fittings: ProductProps[] = [
     imageSrc: 'images/products/ballValve.jpg',
     title: 'Шаровые краны',
     description:
-      'ручные или с приводом (пневматическим или электрическим) с разными материалами корпуса и уплотнения, под разные задачи всех направлений промышленности от пищевой до горнодобывающей',
+      'Ручные или с приводом (пневматическим или электрическим) с разными материалами корпуса и уплотнения, под разные задачи всех направлений промышленности от пищевой до горнодобывающей',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
@@ -81,7 +81,7 @@ const fittings: ProductProps[] = [
     imageSrc: 'images/products/segmentBallValve.png',
     title: 'Сегментные клапана',
     description:
-      'клапана регулирующие  с приводом и позиционером. Осуществим расчет и подбор под Вашу задачу.',
+      'Клапана регулирующие  с приводом и позиционером. Осуществим расчет и подбор под Вашу задачу.',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
@@ -91,7 +91,7 @@ const fittings: ProductProps[] = [
     imageSrc: 'images/products/globeValves.jpg',
     title: 'Седельные клапана',
     description:
-      'седельные клапана  с разными материалами корпуса и уплотнения, под разные задачи',
+      'Седельные клапана  с разными материалами корпуса и уплотнения, под разные задачи',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
@@ -101,7 +101,7 @@ const fittings: ProductProps[] = [
     imageSrc: 'images/products/gateValve.jpg',
     title: 'Шиберные задвижки',
     description:
-      'шиберные задвижки (ножевые задвижки), ручные и под пневмопривод.',
+      'Шиберные задвижки (ножевые задвижки), ручные и под пневмопривод.',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
@@ -111,7 +111,7 @@ const fittings: ProductProps[] = [
     imageSrc: 'images/products/solenoidValves.jpg',
     title: 'Электромагнитные клапана',
     description:
-      'электромагниные клапана соленоидные клапана с электромагнитными катушками',
+      'Электромагниные клапана соленоидные клапана с электромагнитными катушками',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
@@ -121,7 +121,7 @@ const fittings: ProductProps[] = [
 const bearings: ProductProps[] = [
   {
     imageSrc: 'images/products/skf.jpg',
-    title: 'SKF',
+
     description: '',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
@@ -131,21 +131,21 @@ const bearings: ProductProps[] = [
 
   {
     imageSrc: 'images/products/ntn.jpg',
-    title: 'NTN',
+
     description: '',
 
     imgClass: 'aspect-video w-full object-contain   p-7',
   },
   {
     imageSrc: 'images/products/fag.jpg',
-    title: 'FAG',
+
     description: '',
 
     imgClass: 'aspect-video w-full object-contain   p-7',
   },
   {
     imageSrc: 'images/products/nsk.jpg',
-    title: 'NSK',
+
     description: '',
 
     imgClass: 'aspect-video w-full object-contain   p-7',
@@ -154,7 +154,7 @@ const bearings: ProductProps[] = [
 const conveyorComponents: ProductProps[] = [
   {
     imageSrc: 'images/products/rexnord.jpg',
-    title: 'Rexnord',
+
     description: '',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
@@ -165,7 +165,7 @@ const conveyorComponents: ProductProps[] = [
 
   {
     imageSrc: 'images/products/optibelt.jpg',
-    title: 'Optibelt',
+
     description: '',
     imgClass: 'aspect-video w-full    p-7',
     productClass: productClassTwoElements + 'sm:justify-self-start',
@@ -174,7 +174,7 @@ const conveyorComponents: ProductProps[] = [
 const hydraulics: ProductProps[] = [
   {
     imageSrc: 'images/products/duplomatic.jpg',
-    title: 'Duplomatic',
+
     description: '',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',

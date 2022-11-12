@@ -22,6 +22,7 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
       rejectUnauthorized: false
 
     }
+
   });
   const mailOptions = {
     from: process.env.MAIL_USER, // sender address
