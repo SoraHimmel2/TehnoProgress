@@ -16,7 +16,7 @@ const Footer: React.FunctionComponent = () => {
               <img src='/images/logo-vq.png' className='w-72'></img>
             </h6>
           </div>
-          <div className='flex flex-col items-start'>
+          <div className='mb-4 flex flex-col items-start'>
             <h6 className=' mb-4 font-semibold uppercase'>Контакты</h6>
             <div className='mb-4 flex items-center justify-start'>
               <svg
