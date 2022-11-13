@@ -63,14 +63,15 @@ const SubmitForm: React.FunctionComponent = () => {
         .string()
         .email('Email введен не корректно')
         .required('Email обязателен к заполению'),
-      company: yup
-        .string()
-        .min(2, 'Название компании/должности должно быть больше 2х символов!')
-        .max(
-          50,
-          'Название компании/должности не должно превышать длину в 50 символов!'
-        )
-        .required('Поле обязательно к заполнению'),
+      company: yup.string(),
+      // company: yup
+      //   .string()
+      //   .min(2, 'Название компании/должности должно быть больше 2х символов!')
+      //   .max(
+      //     50,
+      //     'Название компании/должности не должно превышать длину в 50 символов!'
+      //   )
+      //   .required('Поле обязательно к заполнению'),
       phone: yup
         .string()
         .test(
@@ -152,7 +153,7 @@ const SubmitForm: React.FunctionComponent = () => {
 
             <div className='mb-4 px-4'>
               <label className='mb-2 block text-sm font-bold text-gray-700'>
-                Компания(должность)
+                Компания
               </label>
               <input
                 className='focus:shadow-outline mb-3 w-full appearance-none rounded  py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none'
@@ -162,9 +163,9 @@ const SubmitForm: React.FunctionComponent = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
-              {formik.errors.company && formik.touched.company ? (
+              {/* {formik.errors.company && formik.touched.company ? (
                 <div className='text-red-600'>{formik.errors.company}</div>
-              ) : null}
+              ) : null} */}
             </div>
           </div>
 
