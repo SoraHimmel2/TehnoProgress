@@ -13,7 +13,6 @@ const Partner: React.FunctionComponent<PartnerProps> = ({
   imageSrc,
   title,
   description,
-
   buttonText,
   classProperty = 'aspect-square w-full   object-contain p-7',
 }) => {
