@@ -8,7 +8,6 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('color-blue-400');
 
   const listItemsArray: liProps[] = [
     {
@@ -64,7 +63,7 @@ const Navbar = () => {
             <NavbarList
               ulClassName='hidden lg:flex'
               liArray={listItemsArray}
-              liClassName=' lg:mx-5 xl:mx-8 text-xl font-bold uppercase border-b border-transparent hover:border-b hover:border-gray-400 text-sky-400'
+              liClassName=' lg:mx-5 xl:mx-8 text-xl font-bold uppercase border-b border-transparent hover:border-b hover:border-gray-400 '
             ></NavbarList>
 
             <div onClick={handleNav} className='px-4 lg:hidden'>
@@ -87,7 +86,7 @@ const Navbar = () => {
           <NavbarList
             ulClassName='hidden lg:flex '
             liArray={listItemsArray}
-            liClassName='mx-8 text-lg font-bold uppercase hover:border-b text-sky-400'
+            liClassName='mx-8 text-lg font-bold uppercase hover:border-b '
           ></NavbarList>
 
           <div onClick={handleNav} className='px-4 lg:hidden'>
@@ -95,38 +94,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* <div className='grid grid-cols-[30%_70%] items-center justify-items-center '>
-        <div className=' flex  justify-self-end border-2 border-black '>
-          <Link href='/'>
-            <a>
-              <img
-                src='/images/logo-vq.png'
-                className=' h-14  border-red-500    '
-              ></img>
-            </a>
-          </Link>
-        </div>
-        <div className='flex justify-self-center lg:flex-1 2xl:ml-40'>
-          <div className='  border-2 border-black'>
-            <NavbarList
-              ulClassName='hidden lg:flex'
-              liArray={listItemsArray}
-              liClassName=' lg:mx-5 xl:mx-8 text-lg font-bold uppercase border-b border-transparent hover:border-b hover:border-gray-400 text-sky-400'
-            ></NavbarList>
 
-            <div
-              style={{ color: `${linkColor}` }}
-              onClick={handleNav}
-              className='px-4 lg:hidden'
-            >
-              <AiOutlineMenu size={25} />
-            </div>
-          </div>
-        </div>
-      </div> */}
-
-      {/* Mobile Menu */}
-      {/* Overlay */}
       <div
         onClick={handleNav}
         className={
@@ -147,7 +115,6 @@ const Navbar = () => {
           nav ? 'fixed left-0 top-0 h-screen w-full bg-black/70 lg:hidden' : ''
         }
       >
-        {/* Side Drawer Menu */}
         <div
           className={
             nav
