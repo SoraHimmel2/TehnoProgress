@@ -18,6 +18,7 @@ const ProductList: React.FunctionComponent<PartnerListProps> = ({
             key={product.imageSrc}
             imageSrc={product.imageSrc}
             title={product.title}
+            titleClass={product.titleClass}
             description={product.description}
             pdfLink={product.pdfLink}
             buttonText={product.buttonText}
