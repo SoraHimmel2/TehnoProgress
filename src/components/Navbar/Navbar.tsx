@@ -14,7 +14,6 @@ const Navbar = () => {
       href: '/',
       text: 'Главная',
     },
-
     {
       href: '/products',
       text: 'Продукция',
@@ -47,7 +46,6 @@ const Navbar = () => {
     };
     window.addEventListener('scroll', handleShadow);
   }, []);
-
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
@@ -71,7 +69,6 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-
         <div className='visible   border-black xl:visible'>
           <Link href='/'>
             <a>
@@ -88,13 +85,11 @@ const Navbar = () => {
             liArray={listItemsArray}
             liClassName='mx-8 text-lg font-bold uppercase hover:border-b '
           ></NavbarList>
-
           <div onClick={handleNav} className='px-4 lg:hidden'>
             <AiOutlineMenu size={25} />
           </div>
         </div>
       </div>
-
       <div
         onClick={handleNav}
         className={
@@ -106,7 +101,7 @@ const Navbar = () => {
         <AiOutlineClose
           color='white'
           enableBackground={1}
-          className='h-12 w-12 '
+          className='h-12 w-12'
         />
       </div>
       <div
