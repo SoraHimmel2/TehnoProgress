@@ -3,6 +3,7 @@ import ArrowLink from '@/components/links/ArrowLink';
 export interface ProductProps {
   imageSrc: string;
   title?: string;
+  titleClass?: string;
   description: string;
   pdfLink?: string;
   buttonText?: string;
@@ -13,6 +14,7 @@ export interface ProductProps {
 const Product: React.FunctionComponent<ProductProps> = ({
   imageSrc,
   title,
+  titleClass = 'break-words',
   description,
   pdfLink,
   buttonText,
@@ -23,7 +25,7 @@ const Product: React.FunctionComponent<ProductProps> = ({
     <div className={productClass}>
       <img className={imgClass} src={imageSrc} alt='Product image' />
       <div className='px-6 py-4'>
-        <h3 className='break-words'>{title}</h3>
+        <h3 className={titleClass}>{title}</h3>
         <div className='z-[80]   text-gray-700 xl:text-xl'>{description}</div>
         {/* <div className='flex-col'>
           <div>
