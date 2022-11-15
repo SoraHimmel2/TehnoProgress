@@ -50,7 +50,7 @@ const pneumatics: ProductProps[] = [
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
-    imgClass: 'aspect-video   md:scale-100 w-full  p-4',
+    imgClass: 'aspect-video object-contain  pt-8 md:scale-100 w-full  p-4',
   },
 ];
 const fittings: ProductProps[] = [
