@@ -20,7 +20,7 @@ const pneumatics: ProductProps[] = [
       'https://drive.google.com/file/d/13C0MmDj_qg_w5nqWZnQPI1NWm6nBOHXt/view',
     buttonText: 'Перейти в каталог',
     imgClass:
-      'aspect-square sm:aspect-video object-contain md:scale-100 w-full   p-7',
+      'aspect-video sm:aspect-video object-contain md:scale-100 w-full sm:h-[100%] h-[40%] p-4',
   },
   {
     imageSrc: 'images/products/smc.jpg',
@@ -31,7 +31,7 @@ const pneumatics: ProductProps[] = [
       'https://drive.google.com/file/d/1Yg4yAEh3lSD7vnueGNHWIIn9Quy_Ubqu/view',
     buttonText: 'Перейти в каталог',
     imgClass:
-      'aspect-square sm:aspect-video object-contain sm:scale-125 md:scale-150 w-full   p-7',
+      'aspect-video sm:aspect-video object-cover h-[40%] w-full sm:h-[100%]  p-4',
   },
   {
     imageSrc: 'images/products/aignep.png',
@@ -41,8 +41,7 @@ const pneumatics: ProductProps[] = [
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
-    imgClass:
-      'aspect-square sm:aspect-video object-contain md:scale-100 w-full   p-7',
+    imgClass: 'aspect-video object-contain md:scale-100 w-full   p-4',
   },
   {
     imageSrc: 'images/products/pneumatic.jpg',
@@ -51,8 +50,7 @@ const pneumatics: ProductProps[] = [
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
-    imgClass:
-      'aspect-square sm:aspect-video object-contain md:scale-100 w-full   p-7',
+    imgClass: 'aspect-video   md:scale-100 w-full  p-4',
   },
 ];
 const fittings: ProductProps[] = [
@@ -174,7 +172,8 @@ const conveyorComponents: ProductProps[] = [
 const hydraulics: ProductProps[] = [
   {
     imageSrc: 'images/products/duplomatic.jpg',
-
+    title: 'Duplomatic',
+    titleClass: ' break-words text-center ',
     description: '',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
@@ -186,6 +185,7 @@ const hydraulics: ProductProps[] = [
   {
     imageSrc: 'images/products/hydraulics.jpg',
     title: 'Другие',
+    titleClass: ' break-words text-center ',
     description: '',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
