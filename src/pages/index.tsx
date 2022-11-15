@@ -5,6 +5,7 @@ import ImageWithText from '@/components/MainPage/ImageWithText';
 import Seo from '@/components/Seo';
 
 import About from '@/components/mainPage/About';
+import Head from 'next/head';
 
 /**
  * SVGR Support
