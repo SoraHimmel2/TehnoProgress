@@ -134,7 +134,7 @@ const Requisites: React.FunctionComponent = () => {
             download='Карточка предприятия.docx'
             href='requisites/Карточка предприятия.docx'
           >
-            Карточка предприятия
+            cкачать карточку предприятия
           </ArrowLink>
         </div>
       </div>
