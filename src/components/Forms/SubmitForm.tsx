@@ -1,10 +1,11 @@
-import SubmitButton from '@/components/buttons/SubmitButton';
 import { useFormik } from 'formik';
-import { useState, useCallback } from 'react';
+import { useState } from 'react';
 import InputMask from 'react-input-mask';
+import { Button } from 'semantic-ui-react';
+import { Modal } from 'semantic-ui-react';
 import * as yup from 'yup';
-import { Button, Grid, Header, Segment, Portal } from 'semantic-ui-react';
-import { Image, Modal } from 'semantic-ui-react';
+
+import SubmitButton from '@/components/buttons/SubmitButton';
 
 const SubmitForm: React.FunctionComponent = () => {
   const [submitButton, setSubmitButton] = useState(false);
@@ -224,7 +225,7 @@ const SubmitForm: React.FunctionComponent = () => {
         >
           <Modal.Header>
             {sumbitResult
-              ? 'Данные успено отправлены'
+              ? 'Данные успешно отправлены'
               : 'Ошибка отправки данных'}
           </Modal.Header>
           <Modal.Content>
