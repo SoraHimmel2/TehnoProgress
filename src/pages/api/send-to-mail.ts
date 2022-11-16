@@ -10,7 +10,6 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
 
 
 
-
   const transporter = nodemailer.createTransport({
     host: 'smtp.yandex.ru',
     port: 465,
@@ -35,6 +34,8 @@ export default async function hello(req: NextApiRequest, res: NextApiResponse) {
   };
   transporter.sendMail(mailOptions).then(() => {
     res.status(200).json({ error: 'ok' });
+  }).catch(() => {
+    res.status(400).json({ response: 'error-mail' });
   });
 
 };

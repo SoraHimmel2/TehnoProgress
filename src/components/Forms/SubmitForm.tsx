@@ -3,10 +3,16 @@ import { useFormik } from 'formik';
 import { useState, useCallback } from 'react';
 import InputMask from 'react-input-mask';
 import * as yup from 'yup';
+import { Button, Grid, Header, Segment, Portal } from 'semantic-ui-react';
+import { Image, Modal } from 'semantic-ui-react';
 
 const SubmitForm: React.FunctionComponent = () => {
   const [submitButton, setSubmitButton] = useState(false);
+  const [state, setState] = useState(false);
+  const [sumbitResult, setSubmitResult] = useState(false);
 
+  const handleClose = () => setState(false);
+  const handleOpen = () => setState(true);
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -16,20 +22,20 @@ const SubmitForm: React.FunctionComponent = () => {
       comment: '',
     },
     onSubmit: async () => {
+      let responseSuccess = false;
       for (let i = 0; i < 4; i++) {
         const response = await fetch('/api/send-to-telegram', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-
           body: JSON.stringify(formik.values),
         });
         if (response.ok) {
-          console.log(response.ok);
-
+          responseSuccess = response.ok;
           setTimeout(() => {
             setSubmitButton(false);
           }, 3000);
           setSubmitButton(true);
+
           break;
         }
         console.log('bad');
@@ -38,19 +44,26 @@ const SubmitForm: React.FunctionComponent = () => {
         const response = await fetch('/api/send-to-mail', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-
           body: JSON.stringify(formik.values),
         });
         if (response.ok) {
-          console.log(response.ok);
-
+          responseSuccess = response.ok;
           setTimeout(() => {
             setSubmitButton(false);
           }, 3000);
           setSubmitButton(true);
+
           break;
         }
+
         console.log('bad-mail');
+      }
+      if (responseSuccess) {
+        setSubmitResult(true);
+        setState(true);
+      } else {
+        setSubmitResult(false);
+        setState(true);
       }
     },
     validationSchema: yup.object({
@@ -201,6 +214,32 @@ const SubmitForm: React.FunctionComponent = () => {
             ></SubmitButton>
           </div>
         </form>
+
+        <Modal
+          dimmer='blurring'
+          onClose={handleClose}
+          onOpen={handleOpen}
+          open={state}
+          size='small'
+        >
+          <Modal.Header>
+            {sumbitResult
+              ? 'Данные успено отправлены'
+              : 'Ошибка отправки данных'}
+          </Modal.Header>
+          <Modal.Content>
+            <Modal.Description>
+              <div className='flex flex-col'>
+                {sumbitResult
+                  ? 'Ваши данные успешно отправлены, в ближайшее время с вами свяжутся'
+                  : 'При отправке Ваших данных возникла ошибка, пожалуйста, свяжитесь с нами по адрессу почты sales@tehnoprogress78.ru'}
+              </div>
+            </Modal.Description>
+          </Modal.Content>
+          <Modal.Actions>
+            <Button content='Закрыть окно' negative onClick={handleClose} />
+          </Modal.Actions>
+        </Modal>
       </div>
     </div>
   );
