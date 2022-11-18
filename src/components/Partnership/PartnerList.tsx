@@ -12,8 +12,8 @@ const PartnerList: React.FunctionComponent = () => {
     { imageSrc: 'images/products/fag.jpg' },
     { imageSrc: 'images/products/nsk.jpg' },
     { imageSrc: 'images/products/ntn.jpg' },
-    { imageSrc: 'images/products/optibelt.jpg' },
-    { imageSrc: 'images/products/duplomatic.jpg' },
+    { imageSrc: 'images/products/optibelt_logo.webp' },
+    { imageSrc: 'images/products/duplomatic.png' },
     { imageSrc: 'images/products/rexnord.jpg' },
   ];
   return (
