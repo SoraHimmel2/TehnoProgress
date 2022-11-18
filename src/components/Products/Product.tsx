@@ -24,20 +24,9 @@ const Product: React.FunctionComponent<ProductProps> = ({
   return (
     <div className={productClass}>
       <img className={imgClass} src={imageSrc} alt='Product image' />
-      <div className='px-6 py-4'>
+      <div className='px-6 pb-4'>
         <h3 className={titleClass}>{title}</h3>
         <div className='z-[80]   text-gray-700 xl:text-xl'>{description}</div>
-        {/* <div className='flex-col'>
-          <div>
-            <ArrowLink
-              direction='right'
-              className='mt-2 '
-              href='/certificates/Festo.jpg'
-            >
-              Перейти к
-            </ArrowLink>
-          </div>
-        </div> */}
       </div>
     </div>
   );
