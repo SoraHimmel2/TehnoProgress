@@ -22,7 +22,7 @@ const SubmitForm: React.FunctionComponent = () => {
       phone: '',
       comment: '',
     },
-    onSubmit: async () => {
+    onSubmit: async (values, { resetForm }) => {
       let responseSuccess = false;
       for (let i = 0; i < 4; i++) {
         const response = await fetch('/api/send-to-telegram', {
@@ -62,6 +62,7 @@ const SubmitForm: React.FunctionComponent = () => {
       if (responseSuccess) {
         setSubmitResult(true);
         setState(true);
+        resetForm({ values: null });
       } else {
         setSubmitResult(false);
         setState(true);
