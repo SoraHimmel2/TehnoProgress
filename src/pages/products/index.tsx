@@ -6,51 +6,52 @@ const productClassTwoElements =
 const productListClassTwoElements =
   'my-10  grid px-2 grid-cols-2 items-center justify-items-center gap-2 sm:gap-10 md:gap-16 lg:gap-20 xl:gap-24 ';
 const productClassFourElements =
-  'w-[100%]   rounded border-primary-900 shadow-xl flex flex-col self-stretch sm:w-[85%]  md:w-[100%] lg:w-[95%] xl:w-[95%] ';
+  'w-[100%]   rounded border-primary-900 shadow-xl flex flex-col  self-stretch sm:w-[85%]  md:w-[100%] lg:w-[95%] xl:w-[95%] ';
 const productListClassFourElements =
   'my-10  grid px-2 grid-cols-2 md:grid-cols-4 items-center justify-items-center gap-2  xl:gap-20 ';
 
 const pneumatics: ProductProps[] = [
   {
     imageSrc: 'https://www.festo.com/media/fox/frontend/img/svg/logo_blue.svg',
-    title: 'Festo',
+
     description:
       'Пневмораспределители, пневмоцилиндры, фитинги, пневмошланги, датчики, пневмоострова, блоки подготовки воздуха, вакуумная техника',
     pdfLink:
       'https://drive.google.com/file/d/13C0MmDj_qg_w5nqWZnQPI1NWm6nBOHXt/view',
     buttonText: 'Перейти в каталог',
     imgClass:
-      'aspect-video sm:aspect-video object-contain md:scale-100 w-full sm:h-[100%] h-[40%] p-4',
+      'aspect-video sm:aspect-video object-contain md:scale-100 w-full sm:h-[100%] h-[45%] p-4',
   },
   {
     imageSrc: 'images/products/smc.jpg',
-    title: 'SMC',
+
     description:
       'Пневмораспределители, пневмоцилиндры, фитинги, пневмошланги, датчики, пневмоострова, блоки подготовки воздуха, вакуумная техника',
     pdfLink:
       'https://drive.google.com/file/d/1Yg4yAEh3lSD7vnueGNHWIIn9Quy_Ubqu/view',
     buttonText: 'Перейти в каталог',
     imgClass:
-      'aspect-video sm:aspect-video object-cover h-[40%] w-full sm:h-[100%]  p-4',
+      'aspect-video sm:aspect-video object-cover h-[45%] w-full sm:h-[100%]  p-4',
   },
   {
     imageSrc: 'images/products/aignep.png',
-    title: 'Aignep',
+
     description:
       'Пневмораспределители, пневмоцилиндры, фитинги, пневмошланги, датчики, блоки подготовки воздуха',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
-    imgClass: 'aspect-video object-contain md:scale-100 w-full   p-4',
+    imgClass: 'aspect-video object-contain   w-full   p-4',
   },
   {
     imageSrc: 'images/products/pneumatic.jpg',
-    title: 'Другие',
-    description: 'Другие пневматические бренды',
+    title: 'Другие пневматические бренды',
+
+    description: '',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
-    imgClass: 'aspect-video object-contain  pt-8 md:scale-100 w-full  p-4',
+    imgClass: 'aspect-video object-contain  pt-4  md:scale-100 w-full  p-4',
   },
 ];
 const fittings: ProductProps[] = [
@@ -162,7 +163,7 @@ const conveyorComponents: ProductProps[] = [
   },
 
   {
-    imageSrc: 'images/products/optibelt.jpg',
+    imageSrc: 'images/products/optibelt_logo.webp',
 
     description: '',
     imgClass: 'aspect-video w-full    p-7',
@@ -171,7 +172,7 @@ const conveyorComponents: ProductProps[] = [
 ];
 const hydraulics: ProductProps[] = [
   {
-    imageSrc: 'images/products/duplomatic.jpg',
+    imageSrc: 'images/products/duplomatic.png',
     title: 'Duplomatic',
     titleClass: ' break-words text-center ',
     description: '',
@@ -183,14 +184,14 @@ const hydraulics: ProductProps[] = [
     productClass: productClassTwoElements + 'sm:justify-self-end',
   },
   {
-    imageSrc: 'images/products/hydraulics.jpg',
+    imageSrc: 'images/products/hydraulics.png',
     title: 'Другие',
     titleClass: ' break-words text-center ',
     description: '',
     pdfLink:
       'https://drive.google.com/file/d/17R2GHBqKj_BUqN35W8t9luZHJCVtBu5D/view',
     buttonText: 'Перейти в каталог',
-    imgClass: 'aspect-square sm:aspect-video w-full   ',
+    imgClass: 'aspect-square sm:aspect-video w-full',
     productClass: productClassTwoElements + 'sm:justify-self-start',
   },
 ];
