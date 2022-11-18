@@ -3,7 +3,7 @@ const Footer: React.FunctionComponent = () => {
     <footer className='bg-white text-center text-gray-600 shadow-lg lg:text-left'>
       <div className='flex items-center justify-center border-b  border-gray-300 p-6 lg:justify-between'></div>
       <div className='mx-6 py-10 text-center md:text-left'>
-        <div className='flex flex-col justify-center  sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:gap-x-40 xl:gap-x-60'>
+        <div className='flex flex-col justify-center  sm:grid sm:grid-cols-2 lg:flex lg:flex-row lg:gap-x-36 xl:gap-x-52'>
           <div className=' border-black '>
             <h6
               className='
@@ -13,7 +13,7 @@ const Footer: React.FunctionComponent = () => {
             items-start
           '
             >
-              <img src='/images/logo-vq.png' className='w-72'></img>
+              <img src='/images/logo-vq.png' className='w-72  '></img>
             </h6>
           </div>
           <div className='mb-4 flex flex-col items-start'>
@@ -63,50 +63,71 @@ const Footer: React.FunctionComponent = () => {
               </div>
             </div>
 
-            <div className=''>
-              <div className='mb-4 flex items-center justify-start'>
-                <svg
-                  aria-hidden='true'
-                  focusable='false'
-                  data-prefix='fas'
-                  data-icon='phone'
-                  className='mr-4 w-6'
-                  role='img'
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 512 512'
-                >
-                  <path
-                    fill='currentColor'
-                    d='M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z'
-                  ></path>
-                </svg>
-                <div className='text-left'>
-                  <div>&nbsp;</div>
-                  <div className=''>Директор:</div>
-                  <div className=' '> 8-921-211-09-40</div>
-                </div>
-              </div>
-              <div className='flex items-center justify-start'>
-                <svg
-                  aria-hidden='true'
-                  focusable='false'
-                  data-prefix='fas'
-                  data-icon='phone'
-                  className='mr-4 w-6'
-                  role='img'
-                  xmlns='http://www.w3.org/2000/svg'
-                  viewBox='0 0 512 512'
-                >
-                  <path
-                    fill='currentColor'
-                    d='M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z'
-                  ></path>
-                </svg>
+            <div className='mb-4 flex items-center justify-start'>
+              <svg
+                aria-hidden='true'
+                focusable='false'
+                data-prefix='fas'
+                data-icon='phone'
+                className='mr-4 w-6'
+                role='img'
+                xmlns='http://www.w3.org/2000/svg'
+                viewBox='0 0 512 512'
+              >
+                <path
+                  fill='currentColor'
+                  d='M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z'
+                ></path>
+              </svg>
 
-                <div className='text-left'>
-                  <div className=''>Отдел продаж: </div>
-                  <div className=''> 8-921-956-09-42</div>
-                </div>
+              <div className='text-left'>
+                <div className=''>Директор:</div>
+                <div className=' '> 8-921-211-09-40</div>
+              </div>
+            </div>
+            <div className='mb-4 flex items-center justify-start'>
+              <svg
+                aria-hidden='true'
+                focusable='false'
+                data-prefix='fas'
+                data-icon='phone'
+                className='mr-4 w-6'
+                role='img'
+                xmlns='http://www.w3.org/2000/svg'
+                viewBox='0 0 512 512'
+              >
+                <path
+                  fill='currentColor'
+                  d='M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z'
+                ></path>
+              </svg>
+
+              <div className='text-left'>
+                <div className=''>Отдел продаж г. Москва: </div>
+                <div className=''> 8-921-936-90-03</div>
+              </div>
+            </div>
+            <div className='mb-4 flex items-center justify-start'>
+              <svg
+                aria-hidden='true'
+                focusable='false'
+                data-prefix='fas'
+                data-icon='phone'
+                className='mr-4 w-6'
+                role='img'
+                xmlns='http://www.w3.org/2000/svg'
+                viewBox='0 0 512 512'
+              >
+                <path
+                  fill='currentColor'
+                  d='M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z'
+                ></path>
+              </svg>
+
+              <div className='text-left'>
+                <div className=''>Отдел продаж г. Санкт-Петербург:</div>
+
+                <div className=''> 8-921-956-09-42</div>
               </div>
             </div>
           </div>
