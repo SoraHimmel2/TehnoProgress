@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import ImageWithText from '@/components/MainPage/ImageWithText';
+import PartnerList from '@/components/Partnership/PartnerList';
 
 import Seo from '@/components/Seo';
 
@@ -32,7 +33,7 @@ export default function HomePage() {
         <h1 className='mb-6 text-center'>Мы сотрудничаем</h1>
         <section className='flex justify-center  text-gray-700 '>
           {/* <PartnerList></PartnerList> */}
-          <img className='px-10' src='images/logos.png'></img>
+          <img className='px-4' src='images/logos.png'></img>
         </section>
       </div>
     </main>
