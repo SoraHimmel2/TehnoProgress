@@ -234,7 +234,7 @@ const SubmitForm: React.FunctionComponent = () => {
               <div className='flex flex-col'>
                 {sumbitResult
                   ? 'Ваши данные успешно отправлены, в ближайшее время с вами свяжутся'
-                  : 'При отправке Ваших данных возникла ошибка, пожалуйста, свяжитесь с нами по адрессу почты sales@tehnoprogress78.ru'}
+                  : 'При отправке Ваших данных возникла ошибка, пожалуйста, свяжитесь с нами по адрессу почты sales@tehnoprogress-russia.ru'}
               </div>
             </Modal.Description>
           </Modal.Content>

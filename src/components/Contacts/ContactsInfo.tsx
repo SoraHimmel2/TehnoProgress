@@ -44,7 +44,7 @@ const ContactsInfo: React.FunctionComponent = () => {
           </svg>
           <div className='text-left'>
             <div className=''>Почта: &nbsp;</div>
-            <div className=''>sales@tehnoprogress78.ru</div>
+            <div className=''>sales@tehnoprogress-russia.ru</div>
           </div>
         </div>
 
@@ -110,10 +110,10 @@ const ContactsInfo: React.FunctionComponent = () => {
               ></path>
             </svg>
 
-            <div className='text-left'>
+            <div className='mb-4 flex flex-col  text-left'>
               <div className=''>Отдел продаж г. Санкт-Петербург:</div>
 
-              <div className=''> 8-921-956-09-42</div>
+              <div className=''>8-921-956-09-42</div>
             </div>
           </div>
         </div>
