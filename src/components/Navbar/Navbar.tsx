@@ -151,7 +151,7 @@ const Navbar = () => {
 
                 <div className='mb-2 flex flex-col '>
                   <div className=''>Почта: &nbsp;</div>
-                  <div className=''>sales@tehnoprogress78.ru</div>
+                  <div className=''>sales@tehnoprogress-russia.ru</div>
                 </div>
                 <div className='mb-2 border-black'>
                   <div className='flex-col  '>
