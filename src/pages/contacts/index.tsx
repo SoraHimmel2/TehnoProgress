@@ -10,7 +10,7 @@ const Contacts: React.FunctionComponent = () => {
   return (
     <div className='mt-24  '>
       <div className=' flex-col'>
-        <div className='mx-12 mb-9 grid grid-cols-1  gap-10  md:grid-cols-2 '>
+        <div className='mx-7 mb-9 grid grid-cols-1  gap-10  md:grid-cols-2 '>
           <ContactsInfo />
           <Requisites />
         </div>
