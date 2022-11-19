@@ -33,10 +33,6 @@ const Requisites: React.FunctionComponent = () => {
           </div>
         </div>
 
-        <div className='mb-4 flex flex-col text-left'>
-          <div></div>
-          <div></div>
-        </div>
         <div className='mb-4 flex flex-row'>
           <div className='text-left'>
             <div className=''>Банк: &nbsp;</div>
