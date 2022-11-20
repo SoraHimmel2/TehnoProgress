@@ -10,6 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className='w-full flex-col'>
       <Head>
         <title>Технопрогресс</title>
+        <meta name='yandex-verification' content='b6e6977bdca78a67' />
       </Head>
       <Navbar></Navbar>
       {children}
