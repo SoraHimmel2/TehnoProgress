@@ -11,7 +11,7 @@ const Requisites: React.FunctionComponent = () => {
           <div>ООО «ТехноПрогресс»</div>
         </div>
         <div className='mb-4 flex flex-row'>
-          <div className='mb-4 text-left'>
+          <div className='text-left'>
             <div className=''>ИНН/КПП: &nbsp;</div>
             <div className=''>7801688448/783801001</div>
           </div>
