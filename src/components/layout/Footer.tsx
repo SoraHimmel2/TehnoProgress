@@ -267,7 +267,7 @@ const Footer: React.FunctionComponent = () => {
           </div> */}
         </div>
       </div>
-      <div className=' bg-white p-3 text-center'>
+      <div className=' bg-white p-1 text-center'>
         <div>© 2022 Copyright: ООО ТехноПрогресс ИНН: 7801688448</div>
       </div>
     </footer>

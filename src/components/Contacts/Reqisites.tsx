@@ -5,18 +5,16 @@ const Requisites: React.FunctionComponent = () => {
     <div className='mb-4  flex  flex-col items-start rounded border border-primary-600 px-4 text-xl shadow-xl'>
       <div>
         <h6 className=' my-4 font-semibold uppercase'>Реквизиты</h6>
+
         <div className='mb-4 flex flex-col text-left'>
-          <div>Директор:</div>
-          <div>Огурцов Андрей Сергеевич</div>
-          <div>Действует на основании Устава</div>
-        </div>
-        <div className='mb-4 flex flex-col text-left'>
-          <div>Полное Наименование:</div>
-          <div>Общество с ограниченной ответственностью «ТехноПрогресс»</div>
-        </div>
-        <div className='mb-4 flex flex-col text-left'>
-          <div>Сокращенное наименование:</div>
+          <div>Наименование:</div>
           <div>ООО «ТехноПрогресс»</div>
+        </div>
+        <div className='mb-4 flex flex-row'>
+          <div className='mb-4 text-left'>
+            <div className=''>ИНН/КПП: &nbsp;</div>
+            <div className=''>7801688448/783801001</div>
+          </div>
         </div>
         <div className='mb-4  flex flex-col text-left'>
           <div>Юридический адрес:</div>
@@ -66,12 +64,12 @@ const Requisites: React.FunctionComponent = () => {
             <div className=' '>30101810100000000723</div>
           </div>
         </div>
-        <div className='mb-4 flex flex-row'>
-          <div className='mb-4 text-left'>
-            <div className=''>ИНН/КПП: &nbsp;</div>
-            <div className=''>7801688448/783801001</div>
-          </div>
+        <div className='mb-4 flex flex-col text-left'>
+          <div>Директор:</div>
+          <div>Огурцов Андрей Сергеевич</div>
+          <div>Действует на основании Устава</div>
         </div>
+
         <div className='mb-4'>
           <ArrowLink
             className='mt-2'
