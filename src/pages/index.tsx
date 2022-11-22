@@ -22,20 +22,26 @@ import Head from 'next/head';
 
 export default function HomePage() {
   return (
-    <main className='flex justify-center'>
-      <div className='container'>
-        <section className='mt-24'>
-          <ImageWithText></ImageWithText>
-        </section>
-        <section>
-          <About></About>
-        </section>
-        <h1 className='mb-6 text-center'>Мы сотрудничаем</h1>
-        <section className='flex justify-center  text-gray-700 '>
-          {/* <PartnerList></PartnerList> */}
-          <img className='px-4' src='images/logos.png'></img>
-        </section>
-      </div>
-    </main>
+    <div>
+      <Head>
+        <title>Технопрогресс</title>
+        <link rel='canonical' href='https://tehnoprogress-russia.ru' />
+      </Head>
+      <main className='flex justify-center'>
+        <div className='container'>
+          <section className='mt-24'>
+            <ImageWithText></ImageWithText>
+          </section>
+          <section>
+            <About></About>
+          </section>
+          <h1 className='mb-6 text-center'>Мы сотрудничаем</h1>
+          <section className='flex justify-center  text-gray-700 '>
+            {/* <PartnerList></PartnerList> */}
+            <img className='px-4' src='images/logos.png'></img>
+          </section>
+        </div>
+      </main>
+    </div>
   );
 }

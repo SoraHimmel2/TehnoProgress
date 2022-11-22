@@ -1,5 +1,6 @@
 import ProductList from '@/components/Products/ProductList';
 import { ProductProps } from '@/components/Products/Product';
+import Head from 'next/head';
 
 const productClassTwoElements =
   '  flex flex-col self-stretch  w-[100%]   rounded border-primary-900 shadow-xl  sm:w-[85%]  md:w-[70%] lg:w-[55%] xl:w-[45%] ';
@@ -199,30 +200,34 @@ const hydraulics: ProductProps[] = [
 const Products: React.FunctionComponent = () => {
   return (
     <div className='pt-24'>
-      <h1 className='text-center'>Пневматика</h1>
+      <Head>
+        <title>Технопрогресс Продукция</title>
+        <link rel='canonical' href='https://tehnoprogress-russia.ru/products' />
+      </Head>
+      <h2 className='text-center'>Пневматика</h2>
       <ProductList
         productList={pneumatics}
         productListClass={productListClassFourElements}
         productClass={productClassFourElements}
       ></ProductList>
-      <h1 className='text-center'>Арматура</h1>
+      <h2 className='text-center'>Арматура</h2>
       <ProductList
         productListClass=' px-2 grid grid-cols-2 items-center justify-items-center gap-2 sm:grid-cols-3  md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6'
         productList={fittings}
         productClass='my-10 w-[100%]  flex flex-col self-stretch rounded border-primary-900 shadow-xl  sm:w-[100%]  md:w-[100%] lg:w-[80%] xl:w-[100%] '
       ></ProductList>
-      <h1 className='text-center'>Подшипники</h1>
+      <h2 className='text-center'>Подшипники</h2>
       <ProductList
         productList={bearings}
         productListClass={productListClassFourElements}
         productClass={productClassFourElements}
       ></ProductList>
-      <h1 className='text-center'>Конвейерное оборудование</h1>
+      <h2 className='text-center'>Конвейерное оборудование</h2>
       <ProductList
         productList={conveyorComponents}
         productListClass={productListClassTwoElements}
       ></ProductList>
-      <h1 className='text-center'>Гидравлика</h1>
+      <h2 className='text-center'>Гидравлика</h2>
       <ProductList
         productList={hydraulics}
         productListClass={productListClassTwoElements}
