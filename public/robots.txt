@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://tehnoprogress-russia.ru/
-
-# Sitemaps
-Sitemap: https://tehnoprogress-russia.ru/sitemap.xml
