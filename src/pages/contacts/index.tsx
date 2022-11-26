@@ -13,6 +13,10 @@ const Contacts: React.FunctionComponent = () => {
       <Head>
         <title>Технопрогресс Контакты</title>
         <link rel='canonical' href='https://tehnoprogress-russia.ru/contacts' />
+        <meta
+          name='keywords'
+          content='технопрогресс почта, контакты, реквизиты'
+        ></meta>
       </Head>
       <div className=' flex-col'>
         <div className='mx-7 mb-9 grid grid-cols-1  gap-10  md:grid-cols-2 '>

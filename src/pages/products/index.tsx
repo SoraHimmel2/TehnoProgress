@@ -203,6 +203,10 @@ const Products: React.FunctionComponent = () => {
       <Head>
         <title>Технопрогресс Продукция</title>
         <link rel='canonical' href='https://tehnoprogress-russia.ru/products' />
+        <meta
+          name='keywords'
+          content='продукция, пневматика, фесто, Festo, фитинги, распределители, пневмоцилиндры, фильтр регулятор, SMC, эсэмси, vuvs, dsbc, dnc, mfh, qs, vtug, подшипники, дисковый затвор, запорная арматура, регулирующая арматура, шаровой кран, позиционер, пневмопривод'
+        ></meta>
       </Head>
       <h2 className='text-center'>Пневматика</h2>
       <ProductList

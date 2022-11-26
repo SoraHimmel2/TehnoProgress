@@ -26,6 +26,10 @@ export default function HomePage() {
       <Head>
         <title>Технопрогресс</title>
         <link rel='canonical' href='https://tehnoprogress-russia.ru' />
+        <meta
+          name='keywords'
+          content='Технопрогресс, пневматика, пневмоавтоматика, автоматика'
+        ></meta>
       </Head>
       <main className='flex justify-center'>
         <div className='container'>
