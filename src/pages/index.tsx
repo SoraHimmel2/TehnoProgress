@@ -24,11 +24,11 @@ export default function HomePage() {
   return (
     <div>
       <Head>
-        <title>Технопрогресс</title>
+        <title>ТехноПрогресс</title>
         <link rel='canonical' href='https://tehnoprogress-russia.ru' />
         <meta
           name='keywords'
-          content='Технопрогресс, пневматика, пневмоавтоматика, автоматика'
+          content='Технопрогресс, фесто, festo, пневматика, пневмоавтоматика, автоматика'
         ></meta>
       </Head>
       <main className='flex justify-center'>
