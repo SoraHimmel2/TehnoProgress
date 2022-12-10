@@ -32,8 +32,12 @@ export default function HomePage() {
           dangerouslySetInnerHTML={{
             __html: `
             {
-              "@context": "https://schema.org/", 
-              "@type": "BreadcrumbList", 
+              "@context": "https://schema.org/",  
+              "@type": "Organization",
+              "name": "ООО "ТехноПрогресс"",
+              "alternateName": "ТехноПрогресс Россия",
+              "url": "https://tehnoprogress-russia.ru",
+              "logo": "https://tehnoprogress-russia.ru/favicon.ico",
               "itemListElement": [{
                 "@type": "ListItem", 
                 "position": 1, 
@@ -49,7 +53,14 @@ export default function HomePage() {
                 "position": 3, 
                 "name": "Обратная Связь",
                 "item": "https://tehnoprogress-russia.ru/feedback"  
-              }]
+              }],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "",
+                "contactType": "customer service",
+                "areaServed": "RU",
+                "availableLanguage": "Russian"
+              }
             }
               `,
           }}
