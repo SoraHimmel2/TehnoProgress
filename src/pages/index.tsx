@@ -54,13 +54,19 @@ export default function HomePage() {
                 "name": "Обратная Связь",
                 "item": "https://tehnoprogress-russia.ru/feedback"  
               }],
-              "contactPoint": {
+              "contactPoint": [{
                 "@type": "ContactPoint",
-                "telephone": "",
+                "telephone": "8-921-956-09-42",
                 "contactType": "customer service",
                 "areaServed": "RU",
                 "availableLanguage": "Russian"
-              }
+              },{
+                "@type": "ContactPoint",
+                "telephone": "8-921-936-90-03",
+                "contactType": "customer service",
+                "areaServed": "RU",
+                "availableLanguage": "Russian"
+              }]
             }
               `,
           }}
