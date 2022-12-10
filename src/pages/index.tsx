@@ -26,6 +26,34 @@ export default function HomePage() {
       <Head>
         <title>ТехноПрогресс</title>
         <link rel='canonical' href='https://tehnoprogress-russia.ru' />
+
+        <script
+          type='application/ld+json'
+          dangerouslySetInnerHTML={{
+            __html: `
+            {
+              "@context": "https://schema.org/", 
+              "@type": "BreadcrumbList", 
+              "itemListElement": [{
+                "@type": "ListItem", 
+                "position": 1, 
+                "name": "Продукция: Festo, другие",
+                "item": "https://tehnoprogress-russia.ru/products"  
+              },{
+                "@type": "ListItem", 
+                "position": 2, 
+                "name": "Контакты",
+                "item": "https://tehnoprogress-russia.ru/contacts"  
+              },{
+                "@type": "ListItem", 
+                "position": 3, 
+                "name": "Обратная Связь",
+                "item": "https://tehnoprogress-russia.ru/feedback"  
+              }]
+            }
+              `,
+          }}
+        />
         <meta
           name='keywords'
           content='Технопрогресс, фесто, festo, пневматика, пневмоавтоматика, автоматика'
