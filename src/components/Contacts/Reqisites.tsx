@@ -26,8 +26,7 @@ const Requisites: React.FunctionComponent = () => {
         <div className='mb-4 flex flex-col text-left'>
           <div>Почтовый адрес:</div>
           <div>
-            190005, г. Санкт-Петербург, ул. 6-я Красноармейская, д. 10, лит. А,
-            ПОМЕЩ. 24
+            196247, г. Санкт-Петербург, пл. Конституции, д. 2, БЦ К-2, Пом. 15
           </div>
         </div>
 
